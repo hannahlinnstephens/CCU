@@ -1,36 +1,36 @@
 year,area,area_name,racecomp,med_elg,rev_med_elg
-2024,1,Alabama,White,"Single parent, Medicaid eligilble according to state income threshold",.095834635426901
-2024,1,Alabama,White,Not Medicaid eligible,.904165336369164
-2024,1,Alabama,Black,Not Medicaid eligible,.9999999410838266
+2024,1,Alabama,White,Not Medicaid eligible,1.105992410653208
+2024,1,Alabama,White,"Single parent, Medicaid eligilble according to state income threshold",10.43464083256999
+2024,1,Alabama,Black,Not Medicaid eligible,1.000000058916177
 2024,1,Alabama,Asian,Not Medicaid eligible,
 2024,1,Alabama,Other,Not Medicaid eligible,
-2024,2,Alaska,White,Not Medicaid eligible,1.000000018000994
-2024,4,Arizona,White,Not Medicaid eligible,.8965399109284001
-2024,4,Arizona,White,"Single parent, Medicaid eligilble according to state income threshold",.1034600864578984
+2024,2,Alaska,White,Not Medicaid eligible,.999999981999006
+2024,4,Arizona,White,Not Medicaid eligible,1.11539931218953
+2024,4,Arizona,White,"Single parent, Medicaid eligilble according to state income threshold",9.6655631580874
 2024,4,Arizona,Black,Not Medicaid eligible,1
 2024,4,Arizona,Hispanic,Not Medicaid eligible,1
-2024,4,Arizona,Asian,Not Medicaid eligible,1.000000005779844
-2024,4,Arizona,Other,Not Medicaid eligible,.9999999975609353
-2024,5,Arkansas,White,Not Medicaid eligible,.9814764284753978
-2024,5,Arkansas,White,"Single parent, Medicaid eligilble according to state income threshold",.0185235141701613
-2024,5,Arkansas,Black,Not Medicaid eligible,1.000000002819139
-2024,5,Arkansas,Hispanic,Not Medicaid eligible,1.000000014461675
-2024,5,Arkansas,Other,Not Medicaid eligible,.9999999960912616
-2024,6,California,White,"Married parents, Medicaid eligilble according to state income threshold",.0070508749527487
-2024,6,California,White,Not Medicaid eligible,.992949111440414
+2024,4,Arizona,Asian,Not Medicaid eligible,.9999999942201557
+2024,4,Arizona,Other,Not Medicaid eligible,1.000000002439065
+2024,5,Arkansas,White,"Single parent, Medicaid eligilble according to state income threshold",53.98543660850566
+2024,5,Arkansas,White,Not Medicaid eligible,1.018873170039729
+2024,5,Arkansas,Black,Not Medicaid eligible,.9999999971808614
+2024,5,Arkansas,Hispanic,Not Medicaid eligible,.9999999855383253
+2024,5,Arkansas,Other,Not Medicaid eligible,1.000000003908738
+2024,6,California,White,"Married parents, Medicaid eligilble according to state income threshold",141.8263700181159
+2024,6,California,White,Not Medicaid eligible,1.007100956613333
 2024,6,California,Black,Not Medicaid eligible,1
-2024,6,California,Hispanic,Not Medicaid eligible,.9413727359105792
-2024,6,California,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",.0586272640610105
+2024,6,California,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",17.05691056910569
+2024,6,California,Hispanic,Not Medicaid eligible,1.062278481044717
 2024,6,California,Asian,Not Medicaid eligible,1
-2024,6,California,Other,Not Medicaid eligible,.9999999998555914
-2024,8,Colorado,White,"Married parents, Medicaid eligilble according to state income threshold",.1296124717870343
-2024,8,Colorado,White,Not Medicaid eligible,.8703875535992945
-2024,8,Colorado,Black,Not Medicaid eligible,.9999999594181141
-2024,8,Colorado,Hispanic,Not Medicaid eligible,1.000000006443745
-2024,8,Colorado,Other,Not Medicaid eligible,1.000000009236555
-2024,9,Connecticut,White,Not Medicaid eligible,.9999999960914987
+2024,6,California,Other,Not Medicaid eligible,1.000000000144408
+2024,8,Colorado,White,"Married parents, Medicaid eligilble according to state income threshold",7.715306916166957
+2024,8,Colorado,White,Not Medicaid eligible,1.148913487864942
+2024,8,Colorado,Black,Not Medicaid eligible,1.000000040581887
+2024,8,Colorado,Hispanic,Not Medicaid eligible,.9999999935562547
+2024,8,Colorado,Other,Not Medicaid eligible,.9999999907634449
+2024,9,Connecticut,White,Not Medicaid eligible,1.000000003908501
 2024,9,Connecticut,Black,Not Medicaid eligible,1
-2024,9,Connecticut,Hispanic,Not Medicaid eligible,.9999999862921556
+2024,9,Connecticut,Hispanic,Not Medicaid eligible,1.000000013707845
 2024,9,Connecticut,Asian,Not Medicaid eligible,1
 2024,9,Connecticut,Other,Not Medicaid eligible,1
 2024,10,Delaware,White,Not Medicaid eligible,1
@@ -42,186 +42,186 @@ year,area,area_name,racecomp,med_elg,rev_med_elg
 2024,11,District of Columbia,Hispanic,Not Medicaid eligible,
 2024,11,District of Columbia,Asian,Not Medicaid eligible,
 2024,11,District of Columbia,Other,Not Medicaid eligible,
-2024,12,Florida,White,"Married parents, Medicaid eligilble according to state income threshold",.0107967616655169
-2024,12,Florida,White,Not Medicaid eligible,.9892032673343848
+2024,12,Florida,White,Not Medicaid eligible,1.010914574407654
+2024,12,Florida,White,"Married parents, Medicaid eligilble according to state income threshold",92.62036441851266
 2024,12,Florida,Black,Not Medicaid eligible,1
-2024,12,Florida,Hispanic,Not Medicaid eligible,.9707511249567324
-2024,12,Florida,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",.0096919349255798
-2024,12,Florida,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",.0195569401176878
-2024,12,Florida,Asian,Not Medicaid eligible,1.000000016953934
-2024,12,Florida,Other,Not Medicaid eligible,.9650850492390332
-2024,12,Florida,Other,"Married parents, Medicaid eligilble according to state income threshold",.0349149507609669
-2024,13,Georgia,White,Not Medicaid eligible,.9999999840100318
-2024,13,Georgia,Black,"Single parent, Medicaid eligilble according to state income threshold",.0509632713986826
-2024,13,Georgia,Black,Not Medicaid eligible,.9490367477150958
-2024,13,Georgia,Hispanic,Not Medicaid eligible,1.000000002448458
+2024,12,Florida,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",51.13274336283186
+2024,12,Florida,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",103.1785714285714
+2024,12,Florida,Hispanic,Not Medicaid eligible,1.030130147976466
+2024,12,Florida,Asian,Not Medicaid eligible,.9999999830460662
+2024,12,Florida,Other,Not Medicaid eligible,1.036178107606679
+2024,12,Florida,Other,"Married parents, Medicaid eligilble according to state income threshold",28.64102564102564
+2024,13,Georgia,White,Not Medicaid eligible,1.000000015989968
+2024,13,Georgia,Black,Not Medicaid eligible,1.053699977801285
+2024,13,Georgia,Black,"Single parent, Medicaid eligilble according to state income threshold",19.62197426803825
+2024,13,Georgia,Hispanic,Not Medicaid eligible,.9999999975515422
 2024,13,Georgia,Asian,Not Medicaid eligible,1
-2024,13,Georgia,Other,Not Medicaid eligible,1.000000003506156
+2024,13,Georgia,Other,Not Medicaid eligible,.9999999964938444
 2024,15,Hawaii,White,Not Medicaid eligible,1
 2024,15,Hawaii,Hispanic,Not Medicaid eligible,
-2024,15,Hawaii,Asian,Not Medicaid eligible,.9999999872184006
-2024,15,Hawaii,Other,Not Medicaid eligible,1.00000003746641
-2024,16,Idaho,White,Not Medicaid eligible,.9999999863677114
-2024,16,Idaho,Hispanic,Not Medicaid eligible,.9999999597628433
+2024,15,Hawaii,Asian,Not Medicaid eligible,1.0000000127816
+2024,15,Hawaii,Other,Not Medicaid eligible,.999999962533591
+2024,16,Idaho,White,Not Medicaid eligible,1.000000013632289
+2024,16,Idaho,Hispanic,Not Medicaid eligible,1.000000040237158
 2024,16,Idaho,Asian,Not Medicaid eligible,
-2024,17,Illinois,White,Not Medicaid eligible,.9999999683444112
+2024,17,Illinois,White,Not Medicaid eligible,1.00000003165559
 2024,17,Illinois,Black,Not Medicaid eligible,1
-2024,17,Illinois,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",.3148148148148148
-2024,17,Illinois,Hispanic,Not Medicaid eligible,.6851851851851852
+2024,17,Illinois,Hispanic,Not Medicaid eligible,1.459459459459459
+2024,17,Illinois,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",3.176470588235294
 2024,17,Illinois,Asian,Not Medicaid eligible,1
 2024,17,Illinois,Other,Not Medicaid eligible,1
-2024,18,Indiana,White,"Married parents, Medicaid eligilble according to state income threshold",.0369895338683162
-2024,18,Indiana,White,Not Medicaid eligible,.9630104580729496
+2024,18,Indiana,White,"Married parents, Medicaid eligilble according to state income threshold",27.03467428273168
+2024,18,Indiana,White,Not Medicaid eligible,1.038410322148597
 2024,18,Indiana,Black,Not Medicaid eligible,1
 2024,18,Indiana,Hispanic,Not Medicaid eligible,1
 2024,18,Indiana,Asian,Not Medicaid eligible,
-2024,18,Indiana,Other,Not Medicaid eligible,1.000000024959069
-2024,19,Iowa,White,Not Medicaid eligible,.9999999796218061
+2024,18,Indiana,Other,Not Medicaid eligible,.9999999750409319
+2024,19,Iowa,White,Not Medicaid eligible,1.000000020378194
 2024,19,Iowa,Other,Not Medicaid eligible,
-2024,20,Kansas,White,Not Medicaid eligible,1.000000011792974
-2024,20,Kansas,Hispanic,Not Medicaid eligible,1.000000036428759
+2024,20,Kansas,White,Not Medicaid eligible,.9999999882070264
+2024,20,Kansas,Hispanic,Not Medicaid eligible,.9999999635712421
 2024,20,Kansas,Asian,Not Medicaid eligible,
-2024,20,Kansas,Other,Not Medicaid eligible,1.000000025994519
-2024,21,Kentucky,White,Not Medicaid eligible,1.000000020733792
-2024,21,Kentucky,Black,Not Medicaid eligible,.9999999806687638
+2024,20,Kansas,Other,Not Medicaid eligible,.9999999740054821
+2024,21,Kentucky,White,Not Medicaid eligible,.999999979266208
+2024,21,Kentucky,Black,Not Medicaid eligible,1.000000019331237
 2024,21,Kentucky,Hispanic,Not Medicaid eligible,
 2024,21,Kentucky,Other,Not Medicaid eligible,1
-2024,22,Louisiana,White,Not Medicaid eligible,.9999999705725491
-2024,22,Louisiana,Black,Not Medicaid eligible,.9999999878021111
+2024,22,Louisiana,White,Not Medicaid eligible,1.000000029427452
+2024,22,Louisiana,Black,Not Medicaid eligible,1.000000012197889
 2024,22,Louisiana,Hispanic,Not Medicaid eligible,1
 2024,22,Louisiana,Asian,Not Medicaid eligible,
 2024,22,Louisiana,Other,Not Medicaid eligible,1
-2024,23,Maine,White,Not Medicaid eligible,.8968643013556837
-2024,23,Maine,White,"Single parent, Medicaid eligilble according to state income threshold",.1031356822060566
+2024,23,Maine,White,"Single parent, Medicaid eligilble according to state income threshold",9.69596534012431
+2024,23,Maine,White,Not Medicaid eligible,1.114995878962312
 2024,23,Maine,Other,Not Medicaid eligible,
-2024,24,Maryland,White,Not Medicaid eligible,.9999999939793288
+2024,24,Maryland,White,Not Medicaid eligible,1.000000006020671
 2024,24,Maryland,Black,Not Medicaid eligible,1
 2024,24,Maryland,Hispanic,Not Medicaid eligible,
 2024,24,Maryland,Asian,Not Medicaid eligible,1
-2024,24,Maryland,Other,Not Medicaid eligible,.1428571428571428
-2024,24,Maryland,Other,"Single parent, Medicaid eligilble according to state income threshold",.8571428571428571
-2024,25,Massachusetts,White,Not Medicaid eligible,1.000000018865751
+2024,24,Maryland,Other,"Single parent, Medicaid eligilble according to state income threshold",1.166666666666667
+2024,24,Maryland,Other,Not Medicaid eligible,7
+2024,25,Massachusetts,White,Not Medicaid eligible,.9999999811342491
 2024,25,Massachusetts,Black,Not Medicaid eligible,1
 2024,25,Massachusetts,Hispanic,Not Medicaid eligible,1
 2024,25,Massachusetts,Asian,Not Medicaid eligible,1
 2024,25,Massachusetts,Other,Not Medicaid eligible,1
-2024,26,Michigan,White,"Married parents, Medicaid eligilble according to state income threshold",.0083629971111051
-2024,26,Michigan,White,Not Medicaid eligible,.991636964490183
-2024,26,Michigan,Black,Not Medicaid eligible,.9999999996498993
+2024,26,Michigan,White,Not Medicaid eligible,1.008433565719403
+2024,26,Michigan,White,"Married parents, Medicaid eligilble according to state income threshold",119.5743567425272
+2024,26,Michigan,Black,Not Medicaid eligible,1.000000000350101
 2024,26,Michigan,Hispanic,Not Medicaid eligible,1
 2024,26,Michigan,Asian,Not Medicaid eligible,1
-2024,26,Michigan,Other,"Married parents, Medicaid eligilble according to state income threshold",.3737894164483465
-2024,26,Michigan,Other,Not Medicaid eligible,.6262105403427606
-2024,27,Minnesota,White,Not Medicaid eligible,.9999999860528097
+2024,26,Michigan,Other,Not Medicaid eligible,1.59690700743019
+2024,26,Michigan,Other,"Married parents, Medicaid eligilble according to state income threshold",2.675303141276042
+2024,27,Minnesota,White,Not Medicaid eligible,1.000000013947191
 2024,27,Minnesota,Black,Not Medicaid eligible,1
-2024,27,Minnesota,Hispanic,Not Medicaid eligible,.9999999654520461
+2024,27,Minnesota,Hispanic,Not Medicaid eligible,1.000000034547955
 2024,27,Minnesota,Asian,Not Medicaid eligible,1
 2024,27,Minnesota,Other,Not Medicaid eligible,
-2024,28,Mississippi,White,Not Medicaid eligible,.9999999863800657
-2024,28,Mississippi,Black,Not Medicaid eligible,1.000000004732875
+2024,28,Mississippi,White,Not Medicaid eligible,1.000000013619935
+2024,28,Mississippi,Black,Not Medicaid eligible,.999999995267125
 2024,28,Mississippi,Hispanic,Not Medicaid eligible,1
 2024,28,Mississippi,Asian,Not Medicaid eligible,
-2024,29,Missouri,White,Not Medicaid eligible,.999999996021282
-2024,29,Missouri,Black,Not Medicaid eligible,1.000000007690922
+2024,29,Missouri,White,Not Medicaid eligible,1.000000003978718
+2024,29,Missouri,Black,Not Medicaid eligible,.9999999923090781
 2024,29,Missouri,Other,Not Medicaid eligible,1
-2024,30,Montana,White,"Married parents, Medicaid eligilble according to state income threshold",.0170651344233832
-2024,30,Montana,White,Not Medicaid eligible,.9829348956040652
-2024,31,Nebraska,White,"Married parents, Medicaid eligilble according to state income threshold",.0319179242739896
-2024,31,Nebraska,White,Not Medicaid eligible,.9680821070768223
+2024,30,Montana,White,"Married parents, Medicaid eligilble according to state income threshold",58.59901101217042
+2024,30,Montana,White,Not Medicaid eligible,1.017361378126114
+2024,31,Nebraska,White,Not Medicaid eligible,1.032970233299276
+2024,31,Nebraska,White,"Married parents, Medicaid eligilble according to state income threshold",31.33035818419168
 2024,31,Nebraska,Black,Not Medicaid eligible,1
 2024,31,Nebraska,Asian,Not Medicaid eligible,
-2024,31,Nebraska,Other,Not Medicaid eligible,1.000000037698356
+2024,31,Nebraska,Other,Not Medicaid eligible,.9999999623016455
 2024,32,Nevada,White,Not Medicaid eligible,1
 2024,32,Nevada,Black,Not Medicaid eligible,1
 2024,32,Nevada,Hispanic,Not Medicaid eligible,1
 2024,32,Nevada,Asian,Not Medicaid eligible,1
 2024,32,Nevada,Other,Not Medicaid eligible,
-2024,33,New Hampshire,White,Not Medicaid eligible,.9999999680901656
+2024,33,New Hampshire,White,Not Medicaid eligible,1.000000031909835
 2024,33,New Hampshire,Other,Not Medicaid eligible,
 2024,34,New Jersey,White,Not Medicaid eligible,1
 2024,34,New Jersey,Black,Not Medicaid eligible,1
-2024,34,New Jersey,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",.0860719874804382
-2024,34,New Jersey,Hispanic,Not Medicaid eligible,.9139280125195618
+2024,34,New Jersey,Hispanic,Not Medicaid eligible,1.094178082191781
+2024,34,New Jersey,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",11.61818181818182
 2024,34,New Jersey,Asian,Not Medicaid eligible,1
 2024,34,New Jersey,Other,Not Medicaid eligible,
-2024,35,New Mexico,White,Not Medicaid eligible,.9999999886657173
-2024,35,New Mexico,Hispanic,Not Medicaid eligible,.9999999701650092
-2024,35,New Mexico,Other,Not Medicaid eligible,1.000000018062014
-2024,36,New York,White,Not Medicaid eligible,.9908656157046378
-2024,36,New York,White,"Married parents, Medicaid eligilble according to state income threshold",.0091344059707562
+2024,35,New Mexico,White,Not Medicaid eligible,1.000000011334283
+2024,35,New Mexico,Hispanic,Not Medicaid eligible,1.000000029834992
+2024,35,New Mexico,Other,Not Medicaid eligible,.9999999819379868
+2024,36,New York,White,Not Medicaid eligible,1.009218590443131
+2024,36,New York,White,"Married parents, Medicaid eligilble according to state income threshold",109.4761939858491
 2024,36,New York,Black,Not Medicaid eligible,1
 2024,36,New York,Hispanic,Not Medicaid eligible,1
 2024,36,New York,Asian,Not Medicaid eligible,1
-2024,36,New York,Other,Not Medicaid eligible,.9999999994117963
-2024,37,North Carolina,White,Not Medicaid eligible,.9999999695771533
+2024,36,New York,Other,Not Medicaid eligible,1.000000000588204
+2024,37,North Carolina,White,Not Medicaid eligible,1.000000030422848
 2024,37,North Carolina,Black,Not Medicaid eligible,1
 2024,37,North Carolina,Hispanic,Not Medicaid eligible,1
 2024,37,North Carolina,Asian,Not Medicaid eligible,1
-2024,37,North Carolina,Other,Not Medicaid eligible,.9999999989113307
-2024,38,North Dakota,White,"Married parents, Medicaid eligilble according to state income threshold",.1310483856547263
-2024,38,North Dakota,White,Not Medicaid eligible,.8689516078861009
-2024,39,Ohio,White,Not Medicaid eligible,1.000000004392493
+2024,37,North Carolina,Other,Not Medicaid eligible,1.000000001088669
+2024,38,North Dakota,White,Not Medicaid eligible,1.150812071609719
+2024,38,North Dakota,White,"Married parents, Medicaid eligilble according to state income threshold",7.630769314737716
+2024,39,Ohio,White,Not Medicaid eligible,.9999999956075071
 2024,39,Ohio,Black,Not Medicaid eligible,1
 2024,39,Ohio,Hispanic,Not Medicaid eligible,1
 2024,39,Ohio,Asian,Not Medicaid eligible,1
 2024,39,Ohio,Other,Not Medicaid eligible,1
-2024,40,Oklahoma,White,Not Medicaid eligible,.9999999621645154
+2024,40,Oklahoma,White,Not Medicaid eligible,1.000000037835486
 2024,40,Oklahoma,Black,Not Medicaid eligible,
 2024,40,Oklahoma,Hispanic,Not Medicaid eligible,1
 2024,40,Oklahoma,Asian,Not Medicaid eligible,
-2024,40,Oklahoma,Other,Not Medicaid eligible,1.000000048947935
-2024,41,Oregon,White,Not Medicaid eligible,.9179052825045696
-2024,41,Oregon,White,"Married parents, Medicaid eligilble according to state income threshold",.0257815593625424
-2024,41,Oregon,White,"Single parent, Medicaid eligilble according to state income threshold",.0563131677879563
+2024,40,Oklahoma,Other,Not Medicaid eligible,.999999951052067
+2024,41,Oregon,White,"Single parent, Medicaid eligilble according to state income threshold",17.75783603162651
+2024,41,Oregon,White,"Married parents, Medicaid eligilble according to state income threshold",38.78741335766075
+2024,41,Oregon,White,Not Medicaid eligible,1.089437024778231
 2024,41,Oregon,Black,Not Medicaid eligible,
-2024,41,Oregon,Hispanic,Not Medicaid eligible,.9999999905390204
-2024,41,Oregon,Asian,Not Medicaid eligible,.999999973752083
-2024,41,Oregon,Other,Not Medicaid eligible,.9999999957614475
-2024,42,Pennsylvania,White,Not Medicaid eligible,.9999999794290291
+2024,41,Oregon,Hispanic,Not Medicaid eligible,1.00000000946098
+2024,41,Oregon,Asian,Not Medicaid eligible,1.000000026247918
+2024,41,Oregon,Other,Not Medicaid eligible,1.000000004238553
+2024,42,Pennsylvania,White,Not Medicaid eligible,1.000000020570971
 2024,42,Pennsylvania,Black,Not Medicaid eligible,1
-2024,42,Pennsylvania,Hispanic,Not Medicaid eligible,.9999999577663967
+2024,42,Pennsylvania,Hispanic,Not Medicaid eligible,1.000000042233605
 2024,42,Pennsylvania,Asian,Not Medicaid eligible,1
-2024,42,Pennsylvania,Other,"Single parent, Medicaid eligilble according to state income threshold",.3433652530779754
-2024,42,Pennsylvania,Other,Not Medicaid eligible,.6566347469220246
-2024,44,Rhode Island,White,Not Medicaid eligible,1.00000001825214
+2024,42,Pennsylvania,Other,Not Medicaid eligible,1.522916666666667
+2024,42,Pennsylvania,Other,"Single parent, Medicaid eligilble according to state income threshold",2.912350597609562
+2024,44,Rhode Island,White,Not Medicaid eligible,.9999999817478603
 2024,44,Rhode Island,Black,Not Medicaid eligible,
 2024,44,Rhode Island,Hispanic,Not Medicaid eligible,1
 2024,44,Rhode Island,Other,Not Medicaid eligible,
-2024,45,South Carolina,White,Not Medicaid eligible,.999999950642822
-2024,45,South Carolina,Black,Not Medicaid eligible,.9999999596641513
+2024,45,South Carolina,White,Not Medicaid eligible,1.00000004935718
+2024,45,South Carolina,Black,Not Medicaid eligible,1.00000004033585
 2024,45,South Carolina,Hispanic,Not Medicaid eligible,1
 2024,45,South Carolina,Asian,Not Medicaid eligible,
 2024,45,South Carolina,Other,Not Medicaid eligible,1
-2024,46,South Dakota,White,Not Medicaid eligible,1.000000048405072
+2024,46,South Dakota,White,Not Medicaid eligible,.9999999515949308
 2024,46,South Dakota,Other,Not Medicaid eligible,
-2024,47,Tennessee,White,Not Medicaid eligible,.9999999757997077
-2024,47,Tennessee,Black,Not Medicaid eligible,1.000000002189838
+2024,47,Tennessee,White,Not Medicaid eligible,1.000000024200293
+2024,47,Tennessee,Black,Not Medicaid eligible,.9999999978101624
 2024,47,Tennessee,Hispanic,Not Medicaid eligible,1
 2024,47,Tennessee,Asian,Not Medicaid eligible,
 2024,47,Tennessee,Other,Not Medicaid eligible,1
-2024,48,Texas,White,Not Medicaid eligible,.9962788075405975
-2024,48,Texas,White,"Single parent, Medicaid eligilble according to state income threshold",.001727609604294
-2024,48,Texas,White,"Married parents, Medicaid eligilble according to state income threshold",.001993595087412
+2024,48,Texas,White,"Single parent, Medicaid eligilble according to state income threshold",578.8344759802822
+2024,48,Texas,White,Not Medicaid eligible,1.003735091453555
+2024,48,Texas,White,"Married parents, Medicaid eligilble according to state income threshold",501.6063724846653
 2024,48,Texas,Black,Not Medicaid eligible,1
-2024,48,Texas,Hispanic,Not Medicaid eligible,.9865003156886332
-2024,48,Texas,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",.0134996681554579
-2024,48,Texas,Asian,Not Medicaid eligible,.9999999936737183
-2024,48,Texas,Other,"Single parent, Medicaid eligilble according to state income threshold",.0527800283684763
-2024,48,Texas,Other,Not Medicaid eligible,.8012549178964973
-2024,48,Texas,Other,"Married parents, Medicaid eligilble according to state income threshold",.1459650453934835
-2024,99999,United States,White,Not Medicaid eligible,.9830516790634701
-2024,99999,United States,White,"Married parents, Medicaid eligilble according to state income threshold",.0094829968499933
-2024,99999,United States,White,"Single parent, Medicaid eligilble according to state income threshold",.007465314042791
-2024,99999,United States,Black,Not Medicaid eligible,.9928773664550742
-2024,99999,United States,Black,"Single parent, Medicaid eligilble according to state income threshold",.0071225980171097
-2024,99999,United States,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",.0185010204037606
-2024,99999,United States,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",.0075345306974803
-2024,99999,United States,Hispanic,Not Medicaid eligible,.9739644862845778
-2024,99999,United States,Asian,Not Medicaid eligible,1.000000006409078
-2024,99999,United States,Other,"Married parents, Medicaid eligilble according to state income threshold",.015439089191915
-2024,99999,United States,Other,"Single parent, Medicaid eligilble according to state income threshold",.0488274956726714
-2024,99999,United States,Other,Not Medicaid eligible,.9357334546323849
-2024,49,Utah,White,Not Medicaid eligible,.9999999481998157
+2024,48,Texas,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",74.07589493936567
+2024,48,Texas,Hispanic,Not Medicaid eligible,1.013684419656717
+2024,48,Texas,Asian,Not Medicaid eligible,1.000000006326282
+2024,48,Texas,Other,Not Medicaid eligible,1.248042261787622
+2024,48,Texas,Other,"Married parents, Medicaid eligilble according to state income threshold",6.850955290729107
+2024,48,Texas,Other,"Single parent, Medicaid eligilble according to state income threshold",18.94656048721007
+2024,99999,United States,White,Not Medicaid eligible,1.017240518781959
+2024,99999,United States,White,"Single parent, Medicaid eligilble according to state income threshold",133.9528376526459
+2024,99999,United States,White,"Married parents, Medicaid eligilble according to state income threshold",105.4518962537365
+2024,99999,United States,Black,Not Medicaid eligible,1.007173729390525
+2024,99999,United States,Black,"Single parent, Medicaid eligilble according to state income threshold",140.3982082939169
+2024,99999,United States,Hispanic,Not Medicaid eligible,1.026731481570484
+2024,99999,United States,Hispanic,"Single parent, Medicaid eligilble according to state income threshold",54.05107276119403
+2024,99999,United States,Hispanic,"Married parents, Medicaid eligilble according to state income threshold",132.7222676701571
+2024,99999,United States,Asian,Not Medicaid eligible,.9999999935909221
+2024,99999,United States,Other,"Single parent, Medicaid eligilble according to state income threshold",20.48026396241528
+2024,99999,United States,Other,"Married parents, Medicaid eligilble according to state income threshold",64.7706602099086
+2024,99999,United States,Other,Not Medicaid eligible,1.068680397232204
+2024,49,Utah,White,Not Medicaid eligible,1.000000051800187
 2024,49,Utah,Black,Not Medicaid eligible,1
 2024,49,Utah,Hispanic,Not Medicaid eligible,1
 2024,49,Utah,Asian,Not Medicaid eligible,1
@@ -229,23 +229,23 @@ year,area,area_name,racecomp,med_elg,rev_med_elg
 2024,50,Vermont,White,Not Medicaid eligible,1
 2024,50,Vermont,Hispanic,Not Medicaid eligible,
 2024,50,Vermont,Other,Not Medicaid eligible,
-2024,51,Virginia,White,Not Medicaid eligible,.999999948789941
-2024,51,Virginia,Black,Not Medicaid eligible,1.000000012401544
-2024,51,Virginia,Hispanic,Not Medicaid eligible,.9999999813169614
-2024,51,Virginia,Asian,Not Medicaid eligible,.9999999974225019
-2024,51,Virginia,Other,Not Medicaid eligible,.9999999863298372
-2024,53,Washington,White,Not Medicaid eligible,.9936523979994042
-2024,53,Washington,White,"Married parents, Medicaid eligilble according to state income threshold",.0063476403593484
+2024,51,Virginia,White,Not Medicaid eligible,1.000000051210062
+2024,51,Virginia,Black,Not Medicaid eligible,.999999987598456
+2024,51,Virginia,Hispanic,Not Medicaid eligible,1.000000018683039
+2024,51,Virginia,Asian,Not Medicaid eligible,1.000000002577498
+2024,51,Virginia,Other,Not Medicaid eligible,1.000000013670163
+2024,53,Washington,White,Not Medicaid eligible,1.006388151443478
+2024,53,Washington,White,"Married parents, Medicaid eligilble according to state income threshold",157.5388559194712
 2024,53,Washington,Black,Not Medicaid eligible,1
 2024,53,Washington,Hispanic,Not Medicaid eligible,1
 2024,53,Washington,Asian,Not Medicaid eligible,1
-2024,53,Washington,Other,Not Medicaid eligible,1.000000026903615
-2024,54,West Virginia,White,Not Medicaid eligible,.9999999643362767
+2024,53,Washington,Other,Not Medicaid eligible,.9999999730963856
+2024,54,West Virginia,White,Not Medicaid eligible,1.000000035663725
 2024,54,West Virginia,Black,Not Medicaid eligible,1
 2024,54,West Virginia,Other,Not Medicaid eligible,
-2024,55,Wisconsin,White,Not Medicaid eligible,.9999999898690723
+2024,55,Wisconsin,White,Not Medicaid eligible,1.000000010130928
 2024,55,Wisconsin,Black,Not Medicaid eligible,
 2024,55,Wisconsin,Hispanic,Not Medicaid eligible,1
 2024,55,Wisconsin,Asian,Not Medicaid eligible,1
 2024,55,Wisconsin,Other,Not Medicaid eligible,
-2024,56,Wyoming,White,Not Medicaid eligible,.999999966353495
+2024,56,Wyoming,White,Not Medicaid eligible,1.000000033646506
