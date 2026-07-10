@@ -1,3 +1,4 @@
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +39,6 @@ body {
   margin: 0 auto;
   padding: 0;
   color: var(--color-text-primary, #191919);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,25 +66,6 @@ body {
   color: var(--color-text-primary, #191919);
 }
 
-.mtm-source {
-  width: min(100%, 1200px);
-  margin: 30px auto 0 auto;
-  font-size: 13px;
-  line-height: 1.25;
-  font-weight: 300;
-  color: rgb(102, 102, 102);
-  font-family: "Inter", Arial, Helvetica, sans-serif !important;
-}
-
-.mtm-source strong {
-  font-weight: 700;
-}
-
-.mtm-source a {
-  color: inherit;
-  text-decoration: underline;
-}
-
 .mtm-controls {
   display: flex;
   flex-direction: row;
@@ -93,15 +74,6 @@ body {
   align-items: flex-start;
   margin-bottom: 14px;
   overflow-x: visible;
-}
-
-.mtm-family-ctrl {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 220px;
-  width: min(100%, 520px);
-  max-width: 520px;
-  min-width: 0;
 }
 
 .mtm-ctrl {
@@ -113,8 +85,7 @@ body {
   min-width: 0;
 }
 
-.mtm-ctrl label,
-.mtm-button-group-label {
+.mtm-ctrl label {
   display: block;
   font-size: 12px;
   color: var(--color-text-secondary, #666);
@@ -139,54 +110,6 @@ body {
   max-width: 100%;
   white-space: normal;
   overflow-wrap: anywhere;
-}
-
-.mtm-segmented {
-  display: inline-flex;
-  align-items: stretch;
-  width: 100%;
-  flex: 1 1 auto;
-  height: auto;
-  min-height: 34.2969px;
-  min-width: 0;
-  border: 1px solid var(--color-border-secondary, #d6d6d6);
-  border-radius: 4px;
-  overflow: hidden;
-  background: var(--color-background-primary, #fff);
-}
-
-.mtm-xbtn {
-  flex: 1 1 0;
-  appearance: none;
-  border: 0;
-  border-right: 1px solid var(--color-border-secondary, #191919);
-  background: var(--color-background-primary, #fff);
-  color: var(--color-text-primary, #191919);
-  padding: 6px 10px;
-  height: auto;
-  min-height: 34.2969px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.1;
-  cursor: pointer;
-  transition: background .12s, color .12s;
-  border-radius: 0;
-  min-width: 0;
-  white-space: normal;
-  overflow-wrap: anywhere;
-}
-
-.mtm-xbtn:last-child {
-  border-right: 0;
-}
-
-.mtm-xbtn:hover {
-  background: var(--color-background-secondary, #f5f5f5);
-}
-
-.mtm-xbtn.is-active {
-  background: #191919;
-  color: #fff;
 }
 
 .mtm-legend {
@@ -439,6 +362,25 @@ body {
   font-size: 10px;
 }
 
+.mtm-source {
+  width: min(100%, 1200px);
+  margin: 30px auto 0 auto;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+  font-family: "Inter", Arial, Helvetica, sans-serif !important;
+}
+
+.mtm-source strong {
+  font-weight: 700;
+}
+
+.mtm-source a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media (max-width: 820px) {
   #map-tile-root {
     padding: 0;
@@ -462,17 +404,6 @@ body {
     gap: 10px;
   }
 
-  .mtm-family-ctrl {
-    min-width: 0;
-  }
-
-  .mtm-xbtn {
-    min-width: 0;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    padding-inline: 6px;
-  }
-
   .mtm-ctrl {
     min-width: 0;
   }
@@ -487,13 +418,12 @@ body {
     flex-wrap: wrap;
   }
 }
-
 </style>
 
 <div id="map-tile-root">
   <div class="mtm-header">
-    <h2 class="mtm-title">Share of households able to afford the cost of basic necessities</h2>
-    <p class="mtm-subtitle">Households with vs. without children aged 0-12, 2024</p>
+    <h2 class="mtm-title">Childcare costs as a share of pretax household income</h2>
+    <p class="mtm-subtitle">Households with children aged 0-12, 2024</p>
   </div>
 
   <div class="mtm-chart-body">
@@ -502,11 +432,6 @@ body {
         <div class="mtm-ctrl">
           <label for="mtm-race">Race/ethnicity</label>
           <select id="mtm-race"></select>
-        </div>
-
-        <div class="mtm-family-ctrl">
-          <div class="mtm-button-group-label">Family type</div>
-          <div id="mtm-xtype-buttons" class="mtm-segmented"></div>
         </div>
       </div>
 
@@ -534,7 +459,7 @@ body {
 
 <script>
 (function () {
-  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/refs/heads/main/state_medicaid_eligible_race.csv";
+  const CSV_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/exp-childcare-tile-map.csv";
   const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
 
   const BASE_TILE_SIZE = 58;
@@ -547,77 +472,41 @@ body {
   const US_AREA = "99999";
 
   const PALETTE = [
-  "#C9550A",
-  "#D05D0B",
-  "#D7650E",
-  "#DE6E14",
-  "#E5771D",
-  "#EB842B",
-  "#F0923B",
-  "#F4A14E",
-  "#F7B164",
-  "#F9C27D",
-  "#F9D19A",
-  "#F7DEB7",
-  "#EFE8CF",
-  "#DDEBF0",
-  "#CBE1EC",
-  "#B8D6E7",
-  "#A4CAE0",
-  "#8FBBD8",
-  "#79ACCF",
-  "#639BC5",
-  "#4D89BA",
-  "#3977AD",
-  "#2B629B",
-  "#224987",
-  "#172B6A"
-];
+    "#172B6A","#224987","#2B629B","#3977AD","#4D89BA","#639BC5","#79ACCF",
+    "#8FBBD8","#A4CAE0","#B8D6E7","#CBE1EC","#DDEBF0","#EFE8CF","#F7DEB7",
+    "#F9D19A","#F9C27D","#F7B164","#F4A14E","#F0923B","#EB842B","#E5771D",
+    "#DE6E14","#D7650E","#D05D0B","#C9550A"
+  ];
 
   let allData = [];
   let states = [];
   let tiles = {};
   let latestYear = null;
   let latestYearIsNumeric = true;
-  let selectedXtype = "";
   let fixedBreaks = [];
   let fixedMin = null;
   let fixedMax = null;
-  let xtypeValues = [];
   let raceValues = [];
   let lastAvailableWidth = 0;
   let resizeTimer = null;
   let activeStaticTile = null;
   let stickyFips = null;
 
-  const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#039;"
-  }[ch]));
+  const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
 
   function fmtSS(value) {
     const v = Number(value);
     if (!Number.isFinite(v)) return "—";
-    return Math.abs(v) <= 1 ? `${(v * 100).toFixed(1)}%` : v.toFixed(2);
+    return `${(v * 100).toFixed(1)}%`;
   }
 
   function titleCase(str) {
-    return String(str || "")
-      .toLowerCase()
-      .replace(/\b\w/g, c => c.toUpperCase());
+    return String(str || "").toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
   }
 
   function hexToRgb(hex) {
-    const clean = hex.replace("#", "");
-    const num = parseInt(clean, 16);
-    return {
-      r: (num >> 16) & 255,
-      g: (num >> 8) & 255,
-      b: num & 255
-    };
+    const num = parseInt(hex.replace("#",""), 16);
+    return { r: (num >> 16) & 255, g: (num >> 8) & 255, b: num & 255 };
   }
 
   function luma(hex) {
@@ -628,7 +517,6 @@ body {
   function uniqueInDataOrder(data, key) {
     const seen = new Set();
     const values = [];
-
     data.forEach(d => {
       const v = d[key];
       if (v !== null && v !== undefined && String(v) !== "" && !seen.has(String(v))) {
@@ -636,62 +524,36 @@ body {
         values.push(String(v));
       }
     });
-
     return values;
   }
 
   function medianDiff(values) {
-    const rounded = [...new Set(
-      values
-        .filter(Number.isFinite)
-        .map(v => Number(v.toFixed(2)))
-    )];
-
+    const rounded = [...new Set(values.filter(Number.isFinite).map(v => Number(v.toFixed(2))))];
     rounded.sort((a, b) => a - b);
-
     const diffs = [];
     for (let i = 1; i < rounded.length; i++) {
       const d = +(rounded[i] - rounded[i - 1]).toFixed(4);
       if (d > 0.0001) diffs.push(d);
     }
-
     if (!diffs.length) return 0.1;
-
     diffs.sort((a, b) => a - b);
     return diffs[Math.floor(diffs.length / 2)];
   }
 
   function readStatesFromTopology(raw) {
     const topo = raw.content || raw;
-    const geoms =
-      topo?.objects?.regions?.geometries ||
-      topo?.objects?.states?.geometries ||
-      [];
+    const geoms = topo?.objects?.regions?.geometries || topo?.objects?.states?.geometries || [];
 
     const parsed = geoms.map(g => {
       const p = g.properties || {};
       const fips = String(p.id ?? p.STATEFP ?? "").padStart(2, "0");
       let abbr = String(p.state_id || p.postal || p.abbr || "").toUpperCase();
-
       if (abbr === "DCC") abbr = "DC";
-
-      return {
-        fips,
-        abbr,
-        name: p.name_lc || titleCase(p.name) || abbr,
-        cx: Number(p.cx),
-        cy: Number(p.cy)
-      };
-    }).filter(d =>
-      d.fips &&
-      d.abbr &&
-      Number.isFinite(d.cx) &&
-      Number.isFinite(d.cy)
-    );
+      return { fips, abbr, name: p.name_lc || titleCase(p.name) || abbr, cx: Number(p.cx), cy: Number(p.cy) };
+    }).filter(d => d.fips && d.abbr && Number.isFinite(d.cx) && Number.isFinite(d.cy));
 
     const xs = parsed.map(d => d.cx);
     const ys = parsed.map(d => d.cy);
-
     const minX = Math.min(...xs);
     const maxY = Math.max(...ys);
     const stepX = medianDiff(xs);
@@ -704,27 +566,19 @@ body {
 
     const minCol = Math.min(...parsed.map(d => d.c));
     const minRow = Math.min(...parsed.map(d => d.r));
-
-    parsed.forEach(d => {
-      d.c -= minCol;
-      d.r -= minRow;
-    });
+    parsed.forEach(d => { d.c -= minCol; d.r -= minRow; });
 
     return parsed;
   }
 
   function normalizeArea(value, abbrToFips) {
     if (value === null || value === undefined) return "";
-
     const raw = String(value).trim();
     if (!raw) return "";
-
     const upper = raw.toUpperCase();
     if (abbrToFips[upper]) return abbrToFips[upper];
-
     const match = raw.match(/\d+/);
     if (!match) return "";
-
     const digits = match[0];
     if (digits === US_AREA) return US_AREA;
     if (digits.length > 2) return digits.slice(0, 2);
@@ -733,18 +587,14 @@ body {
 
   function pick(row, names) {
     for (const name of names) {
-      if (row[name] !== undefined && row[name] !== null && row[name] !== "") {
-        return row[name];
-      }
+      if (row[name] !== undefined && row[name] !== null && row[name] !== "") return row[name];
     }
     return "";
   }
 
   function normalizeRows(rows, stateList) {
     const abbrToFips = {};
-    stateList.forEach(s => {
-      abbrToFips[s.abbr] = s.fips;
-    });
+    stateList.forEach(s => { abbrToFips[s.abbr] = s.fips; });
 
     return rows.map((row, i) => {
       const clean = {};
@@ -752,78 +602,56 @@ body {
         const key = String(k).trim();
         clean[key] = typeof row[k] === "string" ? row[k].trim() : row[k];
       });
-
       return {
         _order: i,
-        year: pick(clean, ["year", "Year", "YEAR"]),
-        area: normalizeArea(pick(clean, ["area", "fips", "state_fips", "state", "state_id", "id"]), abbrToFips),
-        area_name: pick(clean, ["area_name", "state_name", "name"]),
-        xtype: String(pick(clean, ["xtype", "XTYPE", "med_elg"])),
-        racecomp: String(pick(clean, ["racecomp", "race_comp", "race", "RACECOMP"])),
-        ss: Number(pick(clean, ["ss", "SS", "value", "Value", "ssh_net_rev"]))
+        year: pick(clean, ["year","Year","YEAR"]),
+        area: normalizeArea(pick(clean, ["area","fips","state_fips","state","state_id","id"]), abbrToFips),
+        area_name: pick(clean, ["area_name","state_name","name"]),
+        racecomp: String(pick(clean, ["racecomp","race_comp","race","RACECOMP"])),
+        ss: Number(pick(clean, ["ss","SS","value","Value","exp"]))
       };
     }).filter(d => d.area && Number.isFinite(d.ss));
   }
 
   function setLatestYear(data) {
-    const numericYears = data
-      .map(d => Number(d.year))
-      .filter(Number.isFinite);
-
+    const numericYears = data.map(d => Number(d.year)).filter(Number.isFinite);
     if (numericYears.length) {
       latestYearIsNumeric = true;
       latestYear = Math.max(...numericYears);
       return;
     }
-
     latestYearIsNumeric = false;
     latestYear = uniqueInDataOrder(data, "year").at(-1);
   }
 
   function isLatestYearRow(d) {
     if (latestYear === null || latestYear === undefined || latestYear === "") return true;
-
-    return latestYearIsNumeric
-      ? Number(d.year) === latestYear
-      : String(d.year) === String(latestYear);
+    return latestYearIsNumeric ? Number(d.year) === latestYear : String(d.year) === String(latestYear);
   }
 
   function quantile(sortedValues, p) {
     if (!sortedValues.length) return null;
     if (sortedValues.length === 1) return sortedValues[0];
-
     const idx = (sortedValues.length - 1) * p;
     const lo = Math.floor(idx);
     const hi = Math.ceil(idx);
-    const h = idx - lo;
-
-    return sortedValues[lo] * (1 - h) + sortedValues[hi] * h;
+    return sortedValues[lo] * (1 - (idx - lo)) + sortedValues[hi] * (idx - lo);
   }
 
   function quantileBreaks(values, classes) {
-  const sorted = values
-    .map(Number)
-    .filter(Number.isFinite)
-    .sort((a, b) => a - b);
-
-  if (!sorted.length) return [];
-
-  const breaks = [];
-  for (let i = 0; i <= classes; i++) {
-    breaks.push(quantile(sorted, i / classes));
+    const sorted = values.map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+    if (!sorted.length) return [];
+    const breaks = [];
+    for (let i = 0; i <= classes; i++) breaks.push(quantile(sorted, i / classes));
+    return breaks;
   }
-
-  return breaks;
-}
 
   function colorForValue(value, breaks) {
     const v = Number(value);
     if (!Number.isFinite(v) || !breaks.length) return NO_DATA_COLOR;
-
     for (let i = 1; i < breaks.length; i++) {
       if (v <= breaks[i]) return PALETTE[i - 1];
     }
-
     return PALETTE[PALETTE.length - 1];
   }
 
@@ -841,73 +669,55 @@ body {
   }
 
   function makeTooltipTable(state, isSticky = false) {
-  const rows = getStateRows(state.fips);
-  const byCombo = {};
+    const rows = getStateRows(state.fips);
+    const byRace = {};
+    rows.forEach(d => {
+      if (!byRace[d.racecomp]) byRace[d.racecomp] = d;
+    });
 
-  rows.forEach(d => {
-    const key = `${d.xtype}|||${d.racecomp}`;
-    if (!byCombo[key]) byCombo[key] = d;
-  });
-
-  let html = `
-    <div id="mtm-area-header">
-      <div class="mtm-area-title">
-        <span>${esc(state.name)}</span>
-        ${isSticky ? `<button type="button" class="mtm-unpin-btn" id="mtm-unpin-btn">✕ unpin</button>` : ""}
+    let html = `
+      <div id="mtm-area-header">
+        <div class="mtm-area-title">
+          <span>${esc(state.name)}</span>
+          ${isSticky ? `<button type="button" class="mtm-unpin-btn" id="mtm-unpin-btn">✕ unpin</button>` : ""}
+        </div>
+        <div class="mtm-area-subtitle">${isSticky ? "Pinned — click tile again or unpin to return to U.S." : "Hover over a state to explore"}</div>
       </div>
-      <div class="mtm-area-subtitle">${isSticky ? "Pinned — click tile again or unpin to return to U.S." : "Hover over a state to explore"}</div>
-    </div>
-    <div class="mtm-mini-table-wrap">
-      <table class="mtm-mini-table">
-        <colgroup>
-          <col style="width:26%;">
-          ${xtypeValues.map(() => `<col style="width:${xtypeValues.length ? 74 / xtypeValues.length : 74}%;"></col>`).join("")}
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Race/ethnicity</th>
-            ${xtypeValues.map(x => `<th>${esc(x)}</th>`).join("")}
-          </tr>
-        </thead>
-        <tbody>
-  `;
+      <div class="mtm-mini-table-wrap">
+        <table class="mtm-mini-table">
+          <colgroup>
+            <col style="width:26%;">
+            <col style="width:74%;">
+          </colgroup>
+          <thead>
+            <tr><th>Race/ethnicity</th><th>Total childcare (% of pretax income)</th></tr>
+          </thead>
+          <tbody>
+    `;
 
-  raceValues.forEach(r => {   // 2. was xtypeValues
-    html += `<tr><td class="mtm-mini-rowhead">${esc(r)}</td>`;
-
-    xtypeValues.forEach(x => {   // 3. was raceValues
-      const row = byCombo[`${x}|||${r}`];   // key order stays the same — no change needed here
+    raceValues.forEach(r => {
+      const row = byRace[r];
       const v = row ? Number(row.ss) : NaN;
       const color = Number.isFinite(v) ? colorForValue(v, fixedBreaks) : "#bbb";
       const pct = barPct(v);
 
       html += `
-        <td class="mtm-mini-cell">
-          ${
-            Number.isFinite(v)
-              ? `
-                <div class="mtm-mini-value">${fmtSS(v)}</div>
-                <div class="mtm-mini-bar">
-                  <div class="mtm-mini-fill" style="width:${pct}%;background:${color};"></div>
-                </div>
-              `
+        <tr>
+          <td class="mtm-mini-rowhead">${esc(r)}</td>
+          <td class="mtm-mini-cell">
+            ${Number.isFinite(v)
+              ? `<div class="mtm-mini-value">${fmtSS(v)}</div>
+                 <div class="mtm-mini-bar"><div class="mtm-mini-fill" style="width:${pct}%;background:${color};"></div></div>`
               : `<span class="mtm-mini-muted">—</span>`
-          }
-        </td>
+            }
+          </td>
+        </tr>
       `;
     });
 
-    html += `</tr>`;
-  });
-
-  html += `
-        </tbody>
-      </table>
-    </div>
-  `;
-
-  return html;
-}
+    html += `</tbody></table></div>`;
+    return html;
+  }
 
   function getResponsiveLayout(maxCol, maxRow) {
     const root = document.getElementById("map-tile-root");
@@ -1063,7 +873,6 @@ body {
 
     states.forEach(s => {
       const tile = document.createElement("div");
-
       tile.style.cssText = `
         position:absolute;
         left:${s.c * (tileSize + tileGap)}px;
@@ -1082,7 +891,6 @@ body {
         background:${NO_DATA_COLOR};
         color:rgba(90,90,90,.58);
       `;
-
       tile.textContent = s.abbr;
       tile.id = `tl-${s.fips}`;
 
@@ -1095,16 +903,12 @@ body {
         if (usesStaticTooltip()) return;
 
         const wr = wrap.getBoundingClientRect();
-
         let left = e.clientX - wr.left + 14;
         let top = e.clientY - wr.top + 14;
-
-        const tipWidth = tip.offsetWidth || 520;
+        const tipWidth = tip.offsetWidth || 300;
         const tipHeight = tip.offsetHeight || 220;
-
         if (left + tipWidth > mapWidth) left = e.clientX - wr.left - tipWidth - 14;
         if (top + tipHeight > mapHeight) top = e.clientY - wr.top - tipHeight - 14;
-
         tip.style.left = `${Math.max(0, left)}px`;
         tip.style.top = `${Math.max(0, top)}px`;
       });
@@ -1172,58 +976,18 @@ body {
 
   function populateFilters(data) {
     const latestData = data.filter(isLatestYearRow);
-
-    xtypeValues = uniqueInDataOrder(latestData, "xtype");
     raceValues = uniqueInDataOrder(latestData, "racecomp");
-
-    selectedXtype = xtypeValues[0] || "";
-
-    const btnWrap = document.getElementById("mtm-xtype-buttons");
-    btnWrap.innerHTML = "";
-
-    xtypeValues.forEach(v => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "mtm-xbtn";
-      btn.textContent = v;
-      btn.dataset.value = v;
-
-      if (String(selectedXtype) === String(v)) {
-        btn.classList.add("is-active");
-      }
-
-      btn.addEventListener("click", () => {
-        selectedXtype = v;
-
-        document.querySelectorAll(".mtm-xbtn").forEach(b => {
-          b.classList.toggle("is-active", String(b.dataset.value) === String(v));
-        });
-
-        updateMap();
-      });
-
-      btnWrap.appendChild(btn);
-    });
 
     const raceSelect = document.getElementById("mtm-race");
     raceSelect.replaceChildren();
-
-    raceValues.forEach(v => {
-      raceSelect.appendChild(new Option(v, v));
-    });
-
-    if (raceValues.length) {
-      raceSelect.value = raceValues[0];
-    }
-
+    raceValues.forEach(v => raceSelect.appendChild(new Option(v, v)));
+    if (raceValues.length) raceSelect.value = raceValues[0];
   }
 
   function getFilteredRows() {
     const race = document.getElementById("mtm-race").value;
-
     return allData.filter(d =>
       isLatestYearRow(d) &&
-      String(d.xtype) === String(selectedXtype) &&
       String(d.racecomp) === String(race)
     );
   }
@@ -1231,30 +995,19 @@ body {
   function updateMap() {
     const filtered = getFilteredRows();
     const byState = {};
-
     filtered.forEach(d => {
       const fips = String(d.area).padStart(2, "0");
-
-      /*
-        Use ss directly. If duplicate rows exist for the same state/filter,
-        use the first row in the CSV's original order.
-      */
       if (!byState[fips]) byState[fips] = d;
     });
 
     Object.keys(tiles).forEach(fips => {
       const tile = tiles[fips];
       const row = byState[fips];
-
       if (row && Number.isFinite(Number(row.ss))) {
         const value = Number(row.ss);
         const color = colorForValue(value, fixedBreaks);
-
         tile.style.background = color;
-        tile.style.color = luma(color) > 0.58
-          ? "rgba(35,25,15,.82)"
-          : "rgba(255,255,255,.92)";
-
+        tile.style.color = luma(color) > 0.58 ? "rgba(35,25,15,.82)" : "rgba(255,255,255,.92)";
         tile.dataset.val = value;
       } else {
         tile.style.background = NO_DATA_COLOR;
@@ -1270,14 +1023,8 @@ body {
     const bar = document.getElementById("mtm-leg-bar");
     const minEl = document.getElementById("mtm-leg-min");
     const maxEl = document.getElementById("mtm-leg-max");
-
     bar.innerHTML = "";
-
-    if (!fixedBreaks.length) {
-      minEl.textContent = "";
-      maxEl.textContent = "";
-      return;
-    }
+    if (!fixedBreaks.length) { minEl.textContent = ""; maxEl.textContent = ""; return; }
 
     PALETTE.forEach((color, i) => {
       const swatch = document.createElement("div");
@@ -1295,24 +1042,13 @@ body {
   async function init() {
     try {
       const [csvText, tileJson] = await Promise.all([
-        fetch(CSV_URL).then(r => {
-          if (!r.ok) throw new Error(`Could not load CSV: ${r.status}`);
-          return r.text();
-        }),
-        fetch(TILE_JSON_URL).then(r => {
-          if (!r.ok) throw new Error(`Could not load tile JSON: ${r.status}`);
-          return r.json();
-        })
+        fetch(CSV_URL).then(r => { if (!r.ok) throw new Error(`Could not load CSV: ${r.status}`); return r.text(); }),
+        fetch(TILE_JSON_URL).then(r => { if (!r.ok) throw new Error(`Could not load tile JSON: ${r.status}`); return r.json(); })
       ]);
 
       states = readStatesFromTopology(tileJson);
 
-      const parsed = Papa.parse(csvText, {
-        header: true,
-        skipEmptyLines: true,
-        dynamicTyping: false
-      });
-
+      const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true, dynamicTyping: false });
       allData = normalizeRows(parsed.data, states);
       setLatestYear(allData);
 
@@ -1340,7 +1076,6 @@ body {
   }
 
   document.getElementById("mtm-race").addEventListener("change", updateMap);
-
   init();
 })();
 </script>
