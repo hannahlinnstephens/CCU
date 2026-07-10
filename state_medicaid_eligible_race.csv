@@ -1,834 +1,313 @@
-year,area,area_name,racecomp,med_elg,ssh_net_rev
-2024,1,Alabama,Total,Single parent households eligible for state baby bonds ,1
-2024,1,Alabama,Total,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,Total,Household not eligbile for state baby bonds,.4732950889079749
-2024,1,Alabama,White,Single parent households eligible for state baby bonds ,1
-2024,1,Alabama,White,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,White,Household not eligbile for state baby bonds,.4213875195202753
-2024,1,Alabama,Black,Single parent households eligible for state baby bonds ,1
-2024,1,Alabama,Black,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,Black,Household not eligbile for state baby bonds,.5962587942961861
-2024,1,Alabama,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,1,Alabama,Hispanic,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,Hispanic,Household not eligbile for state baby bonds,.5646421022769735
-2024,1,Alabama,Asian,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,Asian,Household not eligbile for state baby bonds,.3826341568392861
-2024,1,Alabama,Other,Single parent households eligible for state baby bonds ,1
-2024,1,Alabama,Other,Married parent households eligible for state baby bonds,1
-2024,1,Alabama,Other,Household not eligbile for state baby bonds,.4832629887445483
-2024,2,Alaska,Total,Single parent households eligible for state baby bonds ,1
-2024,2,Alaska,Total,Married parent households eligible for state baby bonds,1
-2024,2,Alaska,Total,Household not eligbile for state baby bonds,.4399678472857593
-2024,2,Alaska,White,Single parent households eligible for state baby bonds ,1
-2024,2,Alaska,White,Married parent households eligible for state baby bonds,1
-2024,2,Alaska,White,Household not eligbile for state baby bonds,.3778998600580863
-2024,2,Alaska,Black,Household not eligbile for state baby bonds,.6062337892253713
-2024,2,Alaska,Hispanic,Household not eligbile for state baby bonds,.4003367903042578
-2024,2,Alaska,Asian,Married parent households eligible for state baby bonds,1
-2024,2,Alaska,Asian,Household not eligbile for state baby bonds,.4877255026614557
-2024,2,Alaska,Other,Single parent households eligible for state baby bonds ,1
-2024,2,Alaska,Other,Married parent households eligible for state baby bonds,1
-2024,2,Alaska,Other,Household not eligbile for state baby bonds,.6420030962179818
-2024,4,Arizona,Total,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,Total,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,Total,Household not eligbile for state baby bonds,.4506357236705471
-2024,4,Arizona,White,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,White,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,White,Household not eligbile for state baby bonds,.3988605346743551
-2024,4,Arizona,Black,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,Black,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,Black,Household not eligbile for state baby bonds,.5424084762097212
-2024,4,Arizona,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,Hispanic,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,Hispanic,Household not eligbile for state baby bonds,.559306772872545
-2024,4,Arizona,Asian,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,Asian,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,Asian,Household not eligbile for state baby bonds,.3836209378358743
-2024,4,Arizona,Other,Single parent households eligible for state baby bonds ,1
-2024,4,Arizona,Other,Married parent households eligible for state baby bonds,1
-2024,4,Arizona,Other,Household not eligbile for state baby bonds,.5172327129579227
-2024,5,Arkansas,Total,Single parent households eligible for state baby bonds ,1
-2024,5,Arkansas,Total,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,Total,Household not eligbile for state baby bonds,.4544017201476535
-2024,5,Arkansas,White,Single parent households eligible for state baby bonds ,1
-2024,5,Arkansas,White,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,White,Household not eligbile for state baby bonds,.4201162008148531
-2024,5,Arkansas,Black,Single parent households eligible for state baby bonds ,1
-2024,5,Arkansas,Black,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,Black,Household not eligbile for state baby bonds,.5462930345610247
-2024,5,Arkansas,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,5,Arkansas,Hispanic,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,Hispanic,Household not eligbile for state baby bonds,.5952754187154461
-2024,5,Arkansas,Asian,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,Asian,Household not eligbile for state baby bonds,.3877965100096356
-2024,5,Arkansas,Other,Single parent households eligible for state baby bonds ,1
-2024,5,Arkansas,Other,Married parent households eligible for state baby bonds,1
-2024,5,Arkansas,Other,Household not eligbile for state baby bonds,.4954391448807292
-2024,6,California,Total,Single parent households eligible for state baby bonds ,1
-2024,6,California,Total,Married parent households eligible for state baby bonds,1
-2024,6,California,Total,Household not eligbile for state baby bonds,.5009100540729484
-2024,6,California,White,Single parent households eligible for state baby bonds ,1
-2024,6,California,White,Married parent households eligible for state baby bonds,1
-2024,6,California,White,Household not eligbile for state baby bonds,.4225361172591762
-2024,6,California,Black,Single parent households eligible for state baby bonds ,1
-2024,6,California,Black,Married parent households eligible for state baby bonds,1
-2024,6,California,Black,Household not eligbile for state baby bonds,.5572951505767696
-2024,6,California,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,6,California,Hispanic,Married parent households eligible for state baby bonds,1
-2024,6,California,Hispanic,Household not eligbile for state baby bonds,.6301869088761013
-2024,6,California,Asian,Single parent households eligible for state baby bonds ,1
-2024,6,California,Asian,Married parent households eligible for state baby bonds,1
-2024,6,California,Asian,Household not eligbile for state baby bonds,.4547425162579818
-2024,6,California,Other,Single parent households eligible for state baby bonds ,1
-2024,6,California,Other,Married parent households eligible for state baby bonds,1
-2024,6,California,Other,Household not eligbile for state baby bonds,.4680290302799808
-2024,8,Colorado,Total,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,Total,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,Total,Household not eligbile for state baby bonds,.3929945092081024
-2024,8,Colorado,White,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,White,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,White,Household not eligbile for state baby bonds,.3522274606105925
-2024,8,Colorado,Black,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,Black,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,Black,Household not eligbile for state baby bonds,.497887906140094
-2024,8,Colorado,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,Hispanic,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,Hispanic,Household not eligbile for state baby bonds,.5227633120938294
-2024,8,Colorado,Asian,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,Asian,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,Asian,Household not eligbile for state baby bonds,.4161023739655874
-2024,8,Colorado,Other,Single parent households eligible for state baby bonds ,1
-2024,8,Colorado,Other,Married parent households eligible for state baby bonds,1
-2024,8,Colorado,Other,Household not eligbile for state baby bonds,.4304181182460536
-2024,9,Connecticut,Total,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,Total,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,Total,Household not eligbile for state baby bonds,.4289216247536612
-2024,9,Connecticut,White,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,White,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,White,Household not eligbile for state baby bonds,.364661233925957
-2024,9,Connecticut,Black,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,Black,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,Black,Household not eligbile for state baby bonds,.5702446002468241
-2024,9,Connecticut,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,Hispanic,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,Hispanic,Household not eligbile for state baby bonds,.6339513467705363
-2024,9,Connecticut,Asian,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,Asian,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,Asian,Household not eligbile for state baby bonds,.3809114357535143
-2024,9,Connecticut,Other,Single parent households eligible for state baby bonds ,1
-2024,9,Connecticut,Other,Married parent households eligible for state baby bonds,1
-2024,9,Connecticut,Other,Household not eligbile for state baby bonds,.4841070879691797
-2024,10,Delaware,Total,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,Total,Married parent households eligible for state baby bonds,1
-2024,10,Delaware,Total,Household not eligbile for state baby bonds,.4676800230413602
-2024,10,Delaware,White,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,White,Married parent households eligible for state baby bonds,1
-2024,10,Delaware,White,Household not eligbile for state baby bonds,.4188430178905754
-2024,10,Delaware,Black,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,Black,Household not eligbile for state baby bonds,.586364978875862
-2024,10,Delaware,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,Hispanic,Married parent households eligible for state baby bonds,1
-2024,10,Delaware,Hispanic,Household not eligbile for state baby bonds,.6539370854403362
-2024,10,Delaware,Asian,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,Asian,Household not eligbile for state baby bonds,.3776952125715678
-2024,10,Delaware,Other,Single parent households eligible for state baby bonds ,1
-2024,10,Delaware,Other,Household not eligbile for state baby bonds,.4283671523900313
-2024,11,District of Columbia,Total,Single parent households eligible for state baby bonds ,1
-2024,11,District of Columbia,Total,Married parent households eligible for state baby bonds,1
-2024,11,District of Columbia,Total,Household not eligbile for state baby bonds,.3772654175432943
-2024,11,District of Columbia,White,Household not eligbile for state baby bonds,.1962890033323235
-2024,11,District of Columbia,Black,Single parent households eligible for state baby bonds ,1
-2024,11,District of Columbia,Black,Married parent households eligible for state baby bonds,1
-2024,11,District of Columbia,Black,Household not eligbile for state baby bonds,.5972946875583216
-2024,11,District of Columbia,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,11,District of Columbia,Hispanic,Household not eligbile for state baby bonds,.3511124941652404
-2024,11,District of Columbia,Asian,Household not eligbile for state baby bonds,.2736374344148196
-2024,11,District of Columbia,Other,Single parent households eligible for state baby bonds ,1
-2024,11,District of Columbia,Other,Household not eligbile for state baby bonds,.3505798930352743
-2024,12,Florida,Total,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,Total,Married parent households eligible for state baby bonds,1
-2024,12,Florida,Total,Household not eligbile for state baby bonds,.4710164533255227
-2024,12,Florida,White,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,White,Married parent households eligible for state baby bonds,1
-2024,12,Florida,White,Household not eligbile for state baby bonds,.4058469156635628
-2024,12,Florida,Black,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,Black,Married parent households eligible for state baby bonds,1
-2024,12,Florida,Black,Household not eligbile for state baby bonds,.5979346781456121
-2024,12,Florida,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,Hispanic,Married parent households eligible for state baby bonds,1
-2024,12,Florida,Hispanic,Household not eligbile for state baby bonds,.5689639025513566
-2024,12,Florida,Asian,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,Asian,Married parent households eligible for state baby bonds,1
-2024,12,Florida,Asian,Household not eligbile for state baby bonds,.395713684622404
-2024,12,Florida,Other,Single parent households eligible for state baby bonds ,1
-2024,12,Florida,Other,Married parent households eligible for state baby bonds,1
-2024,12,Florida,Other,Household not eligbile for state baby bonds,.476098438380717
-2024,13,Georgia,Total,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,Total,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,Total,Household not eligbile for state baby bonds,.4786589142141305
-2024,13,Georgia,White,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,White,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,White,Household not eligbile for state baby bonds,.4158100588263957
-2024,13,Georgia,Black,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,Black,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,Black,Household not eligbile for state baby bonds,.5549752778649067
-2024,13,Georgia,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,Hispanic,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,Hispanic,Household not eligbile for state baby bonds,.607649777033356
-2024,13,Georgia,Asian,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,Asian,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,Asian,Household not eligbile for state baby bonds,.4554020806515097
-2024,13,Georgia,Other,Single parent households eligible for state baby bonds ,1
-2024,13,Georgia,Other,Married parent households eligible for state baby bonds,1
-2024,13,Georgia,Other,Household not eligbile for state baby bonds,.4878592704573122
-2024,15,Hawaii,Total,Single parent households eligible for state baby bonds ,1
-2024,15,Hawaii,Total,Married parent households eligible for state baby bonds,1
-2024,15,Hawaii,Total,Household not eligbile for state baby bonds,.6064450102623951
-2024,15,Hawaii,White,Single parent households eligible for state baby bonds ,1
-2024,15,Hawaii,White,Married parent households eligible for state baby bonds,1
-2024,15,Hawaii,White,Household not eligbile for state baby bonds,.5607923997288087
-2024,15,Hawaii,Black,Household not eligbile for state baby bonds,.6135532090911603
-2024,15,Hawaii,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,15,Hawaii,Hispanic,Married parent households eligible for state baby bonds,1
-2024,15,Hawaii,Hispanic,Household not eligbile for state baby bonds,.7124318250623527
-2024,15,Hawaii,Asian,Single parent households eligible for state baby bonds ,1
-2024,15,Hawaii,Asian,Married parent households eligible for state baby bonds,1
-2024,15,Hawaii,Asian,Household not eligbile for state baby bonds,.6042615157110882
-2024,15,Hawaii,Other,Single parent households eligible for state baby bonds ,1
-2024,15,Hawaii,Other,Married parent households eligible for state baby bonds,1
-2024,15,Hawaii,Other,Household not eligbile for state baby bonds,.6417539287663239
-2024,16,Idaho,Total,Single parent households eligible for state baby bonds ,1
-2024,16,Idaho,Total,Married parent households eligible for state baby bonds,1
-2024,16,Idaho,Total,Household not eligbile for state baby bonds,.4390955047546666
-2024,16,Idaho,White,Single parent households eligible for state baby bonds ,1
-2024,16,Idaho,White,Married parent households eligible for state baby bonds,1
-2024,16,Idaho,White,Household not eligbile for state baby bonds,.4271178057382208
-2024,16,Idaho,Black,Household not eligbile for state baby bonds,.5113911747758296
-2024,16,Idaho,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,16,Idaho,Hispanic,Married parent households eligible for state baby bonds,1
-2024,16,Idaho,Hispanic,Household not eligbile for state baby bonds,.5061267044958283
-2024,16,Idaho,Asian,Single parent households eligible for state baby bonds ,1
-2024,16,Idaho,Asian,Household not eligbile for state baby bonds,.4529670248761882
-2024,16,Idaho,Other,Married parent households eligible for state baby bonds,1
-2024,16,Idaho,Other,Household not eligbile for state baby bonds,.4933851381129479
-2024,17,Illinois,Total,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,Total,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,Total,Household not eligbile for state baby bonds,.4452795586139017
-2024,17,Illinois,White,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,White,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,White,Household not eligbile for state baby bonds,.3881707361577071
-2024,17,Illinois,Black,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,Black,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,Black,Household not eligbile for state baby bonds,.5955748329105693
-2024,17,Illinois,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,Hispanic,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,Hispanic,Household not eligbile for state baby bonds,.5907751440474384
-2024,17,Illinois,Asian,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,Asian,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,Asian,Household not eligbile for state baby bonds,.4112639929496749
-2024,17,Illinois,Other,Single parent households eligible for state baby bonds ,1
-2024,17,Illinois,Other,Married parent households eligible for state baby bonds,1
-2024,17,Illinois,Other,Household not eligbile for state baby bonds,.4339255401116152
-2024,18,Indiana,Total,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,Total,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,Total,Household not eligbile for state baby bonds,.4544719844646051
-2024,18,Indiana,White,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,White,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,White,Household not eligbile for state baby bonds,.4269678973811041
-2024,18,Indiana,Black,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,Black,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,Black,Household not eligbile for state baby bonds,.5808283550650992
-2024,18,Indiana,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,Hispanic,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,Hispanic,Household not eligbile for state baby bonds,.5700177849814546
-2024,18,Indiana,Asian,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,Asian,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,Asian,Household not eligbile for state baby bonds,.5142308907946778
-2024,18,Indiana,Other,Single parent households eligible for state baby bonds ,1
-2024,18,Indiana,Other,Married parent households eligible for state baby bonds,1
-2024,18,Indiana,Other,Household not eligbile for state baby bonds,.5088404289427707
-2024,19,Iowa,Total,Single parent households eligible for state baby bonds ,1
-2024,19,Iowa,Total,Married parent households eligible for state baby bonds,1
-2024,19,Iowa,Total,Household not eligbile for state baby bonds,.3970026517293468
-2024,19,Iowa,White,Single parent households eligible for state baby bonds ,1
-2024,19,Iowa,White,Married parent households eligible for state baby bonds,1
-2024,19,Iowa,White,Household not eligbile for state baby bonds,.3737927415345036
-2024,19,Iowa,Black,Single parent households eligible for state baby bonds ,1
-2024,19,Iowa,Black,Married parent households eligible for state baby bonds,1
-2024,19,Iowa,Black,Household not eligbile for state baby bonds,.6358397932320412
-2024,19,Iowa,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,19,Iowa,Hispanic,Household not eligbile for state baby bonds,.5468859140380139
-2024,19,Iowa,Asian,Household not eligbile for state baby bonds,.4352615626702714
-2024,19,Iowa,Other,Single parent households eligible for state baby bonds ,1
-2024,19,Iowa,Other,Household not eligbile for state baby bonds,.515986926862091
-2024,20,Kansas,Total,Single parent households eligible for state baby bonds ,1
-2024,20,Kansas,Total,Married parent households eligible for state baby bonds,1
-2024,20,Kansas,Total,Household not eligbile for state baby bonds,.4064426363782243
-2024,20,Kansas,White,Single parent households eligible for state baby bonds ,1
-2024,20,Kansas,White,Married parent households eligible for state baby bonds,1
-2024,20,Kansas,White,Household not eligbile for state baby bonds,.3729433689567891
-2024,20,Kansas,Black,Single parent households eligible for state baby bonds ,1
-2024,20,Kansas,Black,Household not eligbile for state baby bonds,.616294214992302
-2024,20,Kansas,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,20,Kansas,Hispanic,Married parent households eligible for state baby bonds,1
-2024,20,Kansas,Hispanic,Household not eligbile for state baby bonds,.5348805667947704
-2024,20,Kansas,Asian,Household not eligbile for state baby bonds,.4195822453948622
-2024,20,Kansas,Other,Single parent households eligible for state baby bonds ,1
-2024,20,Kansas,Other,Household not eligbile for state baby bonds,.4486221952245297
-2024,21,Kentucky,Total,Single parent households eligible for state baby bonds ,1
-2024,21,Kentucky,Total,Married parent households eligible for state baby bonds,1
-2024,21,Kentucky,Total,Household not eligbile for state baby bonds,.4997499440018676
-2024,21,Kentucky,White,Single parent households eligible for state baby bonds ,1
-2024,21,Kentucky,White,Married parent households eligible for state baby bonds,1
-2024,21,Kentucky,White,Household not eligbile for state baby bonds,.479493486045113
-2024,21,Kentucky,Black,Single parent households eligible for state baby bonds ,1
-2024,21,Kentucky,Black,Household not eligbile for state baby bonds,.6570660479580613
-2024,21,Kentucky,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,21,Kentucky,Hispanic,Household not eligbile for state baby bonds,.6545116756566887
-2024,21,Kentucky,Asian,Household not eligbile for state baby bonds,.4358445145449135
-2024,21,Kentucky,Other,Single parent households eligible for state baby bonds ,1
-2024,21,Kentucky,Other,Married parent households eligible for state baby bonds,1
-2024,21,Kentucky,Other,Household not eligbile for state baby bonds,.5356302720736031
-2024,22,Louisiana,Total,Single parent households eligible for state baby bonds ,1
-2024,22,Louisiana,Total,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,Total,Household not eligbile for state baby bonds,.4976971957737106
-2024,22,Louisiana,White,Single parent households eligible for state baby bonds ,1
-2024,22,Louisiana,White,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,White,Household not eligbile for state baby bonds,.4131025696803327
-2024,22,Louisiana,Black,Single parent households eligible for state baby bonds ,1
-2024,22,Louisiana,Black,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,Black,Household not eligbile for state baby bonds,.6476575550869108
-2024,22,Louisiana,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,22,Louisiana,Hispanic,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,Hispanic,Household not eligbile for state baby bonds,.5590234016680812
-2024,22,Louisiana,Asian,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,Asian,Household not eligbile for state baby bonds,.5154230809753805
-2024,22,Louisiana,Other,Single parent households eligible for state baby bonds ,1
-2024,22,Louisiana,Other,Married parent households eligible for state baby bonds,1
-2024,22,Louisiana,Other,Household not eligbile for state baby bonds,.5197281433838494
-2024,23,Maine,Total,Single parent households eligible for state baby bonds ,1
-2024,23,Maine,Total,Married parent households eligible for state baby bonds,1
-2024,23,Maine,Total,Household not eligbile for state baby bonds,.4540562023127526
-2024,23,Maine,White,Single parent households eligible for state baby bonds ,1
-2024,23,Maine,White,Married parent households eligible for state baby bonds,1
-2024,23,Maine,White,Household not eligbile for state baby bonds,.4479994863891332
-2024,23,Maine,Black,Single parent households eligible for state baby bonds ,1
-2024,23,Maine,Black,Married parent households eligible for state baby bonds,1
-2024,23,Maine,Black,Household not eligbile for state baby bonds,.629198008127551
-2024,23,Maine,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,23,Maine,Hispanic,Household not eligbile for state baby bonds,.5911226146456436
-2024,23,Maine,Asian,Household not eligbile for state baby bonds,.5478035846033852
-2024,23,Maine,Other,Household not eligbile for state baby bonds,.4670279750087776
-2024,24,Maryland,Total,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,Total,Married parent households eligible for state baby bonds,1
-2024,24,Maryland,Total,Household not eligbile for state baby bonds,.427182118574414
-2024,24,Maryland,White,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,White,Married parent households eligible for state baby bonds,1
-2024,24,Maryland,White,Household not eligbile for state baby bonds,.3542841693872399
-2024,24,Maryland,Black,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,Black,Married parent households eligible for state baby bonds,1
-2024,24,Maryland,Black,Household not eligbile for state baby bonds,.5022372886463121
-2024,24,Maryland,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,Hispanic,Married parent households eligible for state baby bonds,1
-2024,24,Maryland,Hispanic,Household not eligbile for state baby bonds,.5900274941187895
-2024,24,Maryland,Asian,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,Asian,Household not eligbile for state baby bonds,.4137271122802993
-2024,24,Maryland,Other,Single parent households eligible for state baby bonds ,1
-2024,24,Maryland,Other,Household not eligbile for state baby bonds,.4617385880027876
-2024,25,Massachusetts,Total,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,Total,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,Total,Household not eligbile for state baby bonds,.4781799708694165
-2024,25,Massachusetts,White,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,White,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,White,Household not eligbile for state baby bonds,.4328045702764268
-2024,25,Massachusetts,Black,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,Black,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,Black,Household not eligbile for state baby bonds,.6348827408058988
-2024,25,Massachusetts,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,Hispanic,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,Hispanic,Household not eligbile for state baby bonds,.6625241658782277
-2024,25,Massachusetts,Asian,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,Asian,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,Asian,Household not eligbile for state baby bonds,.4469674602746704
-2024,25,Massachusetts,Other,Single parent households eligible for state baby bonds ,1
-2024,25,Massachusetts,Other,Married parent households eligible for state baby bonds,1
-2024,25,Massachusetts,Other,Household not eligbile for state baby bonds,.5980135448965396
-2024,26,Michigan,Total,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,Total,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,Total,Household not eligbile for state baby bonds,.4318276181519282
-2024,26,Michigan,White,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,White,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,White,Household not eligbile for state baby bonds,.4000704168201028
-2024,26,Michigan,Black,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,Black,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,Black,Household not eligbile for state baby bonds,.591377409779392
-2024,26,Michigan,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,Hispanic,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,Hispanic,Household not eligbile for state baby bonds,.5204957836513737
-2024,26,Michigan,Asian,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,Asian,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,Asian,Household not eligbile for state baby bonds,.3521223562147015
-2024,26,Michigan,Other,Single parent households eligible for state baby bonds ,1
-2024,26,Michigan,Other,Married parent households eligible for state baby bonds,1
-2024,26,Michigan,Other,Household not eligbile for state baby bonds,.491799344308438
-2024,27,Minnesota,Total,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,Total,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,Total,Household not eligbile for state baby bonds,.4280351465440927
-2024,27,Minnesota,White,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,White,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,White,Household not eligbile for state baby bonds,.3996112283812179
-2024,27,Minnesota,Black,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,Black,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,Black,Household not eligbile for state baby bonds,.6805176894327
-2024,27,Minnesota,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,Hispanic,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,Hispanic,Household not eligbile for state baby bonds,.5328480923584574
-2024,27,Minnesota,Asian,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,Asian,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,Asian,Household not eligbile for state baby bonds,.506007493626794
-2024,27,Minnesota,Other,Single parent households eligible for state baby bonds ,1
-2024,27,Minnesota,Other,Married parent households eligible for state baby bonds,1
-2024,27,Minnesota,Other,Household not eligbile for state baby bonds,.438274782203733
-2024,28,Mississippi,Total,Single parent households eligible for state baby bonds ,1
-2024,28,Mississippi,Total,Married parent households eligible for state baby bonds,1
-2024,28,Mississippi,Total,Household not eligbile for state baby bonds,.488982601388638
-2024,28,Mississippi,White,Single parent households eligible for state baby bonds ,1
-2024,28,Mississippi,White,Married parent households eligible for state baby bonds,1
-2024,28,Mississippi,White,Household not eligbile for state baby bonds,.4145647402556011
-2024,28,Mississippi,Black,Single parent households eligible for state baby bonds ,1
-2024,28,Mississippi,Black,Married parent households eligible for state baby bonds,1
-2024,28,Mississippi,Black,Household not eligbile for state baby bonds,.601893832395308
-2024,28,Mississippi,Hispanic,Married parent households eligible for state baby bonds,1
-2024,28,Mississippi,Hispanic,Household not eligbile for state baby bonds,.5635517100209017
-2024,28,Mississippi,Asian,Household not eligbile for state baby bonds,.4945905956228644
-2024,28,Mississippi,Other,Single parent households eligible for state baby bonds ,1
-2024,28,Mississippi,Other,Married parent households eligible for state baby bonds,1
-2024,28,Mississippi,Other,Household not eligbile for state baby bonds,.5139074071280889
-2024,29,Missouri,Total,Single parent households eligible for state baby bonds ,1
-2024,29,Missouri,Total,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,Total,Household not eligbile for state baby bonds,.431909930389122
-2024,29,Missouri,White,Single parent households eligible for state baby bonds ,1
-2024,29,Missouri,White,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,White,Household not eligbile for state baby bonds,.3986937834273397
-2024,29,Missouri,Black,Single parent households eligible for state baby bonds ,1
-2024,29,Missouri,Black,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,Black,Household not eligbile for state baby bonds,.6112778958697296
-2024,29,Missouri,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,29,Missouri,Hispanic,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,Hispanic,Household not eligbile for state baby bonds,.5665737157213785
-2024,29,Missouri,Asian,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,Asian,Household not eligbile for state baby bonds,.3962937626369424
-2024,29,Missouri,Other,Single parent households eligible for state baby bonds ,1
-2024,29,Missouri,Other,Married parent households eligible for state baby bonds,1
-2024,29,Missouri,Other,Household not eligbile for state baby bonds,.4976336718231609
-2024,30,Montana,Total,Single parent households eligible for state baby bonds ,1
-2024,30,Montana,Total,Married parent households eligible for state baby bonds,1
-2024,30,Montana,Total,Household not eligbile for state baby bonds,.400811743427359
-2024,30,Montana,White,Single parent households eligible for state baby bonds ,1
-2024,30,Montana,White,Married parent households eligible for state baby bonds,1
-2024,30,Montana,White,Household not eligbile for state baby bonds,.3751780388937635
-2024,30,Montana,Black,Household not eligbile for state baby bonds,.393535386191976
-2024,30,Montana,Hispanic,Household not eligbile for state baby bonds,.6081885997663169
-2024,30,Montana,Asian,Household not eligbile for state baby bonds,.4962854185220981
-2024,30,Montana,Other,Single parent households eligible for state baby bonds ,1
-2024,30,Montana,Other,Married parent households eligible for state baby bonds,1
-2024,30,Montana,Other,Household not eligbile for state baby bonds,.5467863209597512
-2024,31,Nebraska,Total,Single parent households eligible for state baby bonds ,1
-2024,31,Nebraska,Total,Married parent households eligible for state baby bonds,1
-2024,31,Nebraska,Total,Household not eligbile for state baby bonds,.4519527966093574
-2024,31,Nebraska,White,Single parent households eligible for state baby bonds ,1
-2024,31,Nebraska,White,Married parent households eligible for state baby bonds,1
-2024,31,Nebraska,White,Household not eligbile for state baby bonds,.4152716539867271
-2024,31,Nebraska,Black,Single parent households eligible for state baby bonds ,1
-2024,31,Nebraska,Black,Household not eligbile for state baby bonds,.7004694405957052
-2024,31,Nebraska,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,31,Nebraska,Hispanic,Married parent households eligible for state baby bonds,1
-2024,31,Nebraska,Hispanic,Household not eligbile for state baby bonds,.612959659629978
-2024,31,Nebraska,Asian,Married parent households eligible for state baby bonds,1
-2024,31,Nebraska,Asian,Household not eligbile for state baby bonds,.5162910569048468
-2024,31,Nebraska,Other,Single parent households eligible for state baby bonds ,1
-2024,31,Nebraska,Other,Household not eligbile for state baby bonds,.5648568701834505
-2024,32,Nevada,Total,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,Total,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,Total,Household not eligbile for state baby bonds,.4424856012637384
-2024,32,Nevada,White,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,White,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,White,Household not eligbile for state baby bonds,.371241044899456
-2024,32,Nevada,Black,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,Black,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,Black,Household not eligbile for state baby bonds,.5709057155797795
-2024,32,Nevada,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,Hispanic,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,Hispanic,Household not eligbile for state baby bonds,.5835725693523801
-2024,32,Nevada,Asian,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,Asian,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,Asian,Household not eligbile for state baby bonds,.3881219920178121
-2024,32,Nevada,Other,Single parent households eligible for state baby bonds ,1
-2024,32,Nevada,Other,Married parent households eligible for state baby bonds,1
-2024,32,Nevada,Other,Household not eligbile for state baby bonds,.4270207090797787
-2024,33,New Hampshire,Total,Single parent households eligible for state baby bonds ,1
-2024,33,New Hampshire,Total,Married parent households eligible for state baby bonds,1
-2024,33,New Hampshire,Total,Household not eligbile for state baby bonds,.3712918278698289
-2024,33,New Hampshire,White,Single parent households eligible for state baby bonds ,1
-2024,33,New Hampshire,White,Married parent households eligible for state baby bonds,1
-2024,33,New Hampshire,White,Household not eligbile for state baby bonds,.3667327844899613
-2024,33,New Hampshire,Black,Household not eligbile for state baby bonds,.5944867474509483
-2024,33,New Hampshire,Hispanic,Household not eligbile for state baby bonds,.3749024931638143
-2024,33,New Hampshire,Asian,Household not eligbile for state baby bonds,.3184315020938171
-2024,33,New Hampshire,Other,Single parent households eligible for state baby bonds ,1
-2024,33,New Hampshire,Other,Household not eligbile for state baby bonds,.4612028490162683
-2024,34,New Jersey,Total,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,Total,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,Total,Household not eligbile for state baby bonds,.4198147008795797
-2024,34,New Jersey,White,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,White,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,White,Household not eligbile for state baby bonds,.3634962630341265
-2024,34,New Jersey,Black,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,Black,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,Black,Household not eligbile for state baby bonds,.5021334530343746
-2024,34,New Jersey,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,Hispanic,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,Hispanic,Household not eligbile for state baby bonds,.5942495650424381
-2024,34,New Jersey,Asian,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,Asian,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,Asian,Household not eligbile for state baby bonds,.3110220186737471
-2024,34,New Jersey,Other,Single parent households eligible for state baby bonds ,1
-2024,34,New Jersey,Other,Married parent households eligible for state baby bonds,1
-2024,34,New Jersey,Other,Household not eligbile for state baby bonds,.4235731523397971
-2024,35,New Mexico,Total,Single parent households eligible for state baby bonds ,1
-2024,35,New Mexico,Total,Married parent households eligible for state baby bonds,1
-2024,35,New Mexico,Total,Household not eligbile for state baby bonds,.4328906233438216
-2024,35,New Mexico,White,Single parent households eligible for state baby bonds ,1
-2024,35,New Mexico,White,Married parent households eligible for state baby bonds,1
-2024,35,New Mexico,White,Household not eligbile for state baby bonds,.3561661860138857
-2024,35,New Mexico,Black,Household not eligbile for state baby bonds,.4721633483934736
-2024,35,New Mexico,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,35,New Mexico,Hispanic,Married parent households eligible for state baby bonds,1
-2024,35,New Mexico,Hispanic,Household not eligbile for state baby bonds,.494342639652583
-2024,35,New Mexico,Asian,Married parent households eligible for state baby bonds,1
-2024,35,New Mexico,Asian,Household not eligbile for state baby bonds,.3787215835805655
-2024,35,New Mexico,Other,Single parent households eligible for state baby bonds ,1
-2024,35,New Mexico,Other,Married parent households eligible for state baby bonds,1
-2024,35,New Mexico,Other,Household not eligbile for state baby bonds,.5079361292144262
-2024,36,New York,Total,Single parent households eligible for state baby bonds ,1
-2024,36,New York,Total,Married parent households eligible for state baby bonds,1
-2024,36,New York,Total,Household not eligbile for state baby bonds,.5084968126809252
-2024,36,New York,White,Single parent households eligible for state baby bonds ,1
-2024,36,New York,White,Married parent households eligible for state baby bonds,1
-2024,36,New York,White,Household not eligbile for state baby bonds,.423299396938849
-2024,36,New York,Black,Single parent households eligible for state baby bonds ,1
-2024,36,New York,Black,Married parent households eligible for state baby bonds,1
-2024,36,New York,Black,Household not eligbile for state baby bonds,.6462094409425868
-2024,36,New York,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,36,New York,Hispanic,Married parent households eligible for state baby bonds,1
-2024,36,New York,Hispanic,Household not eligbile for state baby bonds,.6924679231334243
-2024,36,New York,Asian,Single parent households eligible for state baby bonds ,1
-2024,36,New York,Asian,Married parent households eligible for state baby bonds,1
-2024,36,New York,Asian,Household not eligbile for state baby bonds,.5536198485560656
-2024,36,New York,Other,Single parent households eligible for state baby bonds ,1
-2024,36,New York,Other,Married parent households eligible for state baby bonds,1
-2024,36,New York,Other,Household not eligbile for state baby bonds,.4996569371674479
-2024,37,North Carolina,Total,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,Total,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,Total,Household not eligbile for state baby bonds,.4507303405834995
-2024,37,North Carolina,White,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,White,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,White,Household not eligbile for state baby bonds,.3997628617237425
-2024,37,North Carolina,Black,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,Black,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,Black,Household not eligbile for state baby bonds,.5549401978816263
-2024,37,North Carolina,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,Hispanic,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,Hispanic,Household not eligbile for state baby bonds,.6232268577623419
-2024,37,North Carolina,Asian,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,Asian,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,Asian,Household not eligbile for state baby bonds,.3438298621841164
-2024,37,North Carolina,Other,Single parent households eligible for state baby bonds ,1
-2024,37,North Carolina,Other,Married parent households eligible for state baby bonds,1
-2024,37,North Carolina,Other,Household not eligbile for state baby bonds,.4735440999210935
-2024,38,North Dakota,Total,Single parent households eligible for state baby bonds ,1
-2024,38,North Dakota,Total,Married parent households eligible for state baby bonds,1
-2024,38,North Dakota,Total,Household not eligbile for state baby bonds,.3573625729641809
-2024,38,North Dakota,White,Single parent households eligible for state baby bonds ,1
-2024,38,North Dakota,White,Married parent households eligible for state baby bonds,1
-2024,38,North Dakota,White,Household not eligbile for state baby bonds,.3369509441964844
-2024,38,North Dakota,Black,Single parent households eligible for state baby bonds ,1
-2024,38,North Dakota,Black,Married parent households eligible for state baby bonds,1
-2024,38,North Dakota,Black,Household not eligbile for state baby bonds,.3705042402676931
-2024,38,North Dakota,Hispanic,Household not eligbile for state baby bonds,.4829051562049305
-2024,38,North Dakota,Asian,Household not eligbile for state baby bonds,.4862632231475322
-2024,38,North Dakota,Other,Single parent households eligible for state baby bonds ,1
-2024,38,North Dakota,Other,Married parent households eligible for state baby bonds,1
-2024,38,North Dakota,Other,Household not eligbile for state baby bonds,.4783745872348049
-2024,39,Ohio,Total,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,Total,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,Total,Household not eligbile for state baby bonds,.4022154541111178
-2024,39,Ohio,White,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,White,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,White,Household not eligbile for state baby bonds,.3654128090251972
-2024,39,Ohio,Black,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,Black,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,Black,Household not eligbile for state baby bonds,.5728386828559416
-2024,39,Ohio,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,Hispanic,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,Hispanic,Household not eligbile for state baby bonds,.5225058616871051
-2024,39,Ohio,Asian,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,Asian,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,Asian,Household not eligbile for state baby bonds,.4354391360971665
-2024,39,Ohio,Other,Single parent households eligible for state baby bonds ,1
-2024,39,Ohio,Other,Married parent households eligible for state baby bonds,1
-2024,39,Ohio,Other,Household not eligbile for state baby bonds,.4875723724112384
-2024,40,Oklahoma,Total,Single parent households eligible for state baby bonds ,1
-2024,40,Oklahoma,Total,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,Total,Household not eligbile for state baby bonds,.4627308234410292
-2024,40,Oklahoma,White,Single parent households eligible for state baby bonds ,1
-2024,40,Oklahoma,White,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,White,Household not eligbile for state baby bonds,.4284122259452159
-2024,40,Oklahoma,Black,Single parent households eligible for state baby bonds ,1
-2024,40,Oklahoma,Black,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,Black,Household not eligbile for state baby bonds,.545530675511096
-2024,40,Oklahoma,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,40,Oklahoma,Hispanic,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,Hispanic,Household not eligbile for state baby bonds,.5780035510724001
-2024,40,Oklahoma,Asian,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,Asian,Household not eligbile for state baby bonds,.55596122900275
-2024,40,Oklahoma,Other,Single parent households eligible for state baby bonds ,1
-2024,40,Oklahoma,Other,Married parent households eligible for state baby bonds,1
-2024,40,Oklahoma,Other,Household not eligbile for state baby bonds,.497448654845893
-2024,41,Oregon,Total,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,Total,Married parent households eligible for state baby bonds,1
-2024,41,Oregon,Total,Household not eligbile for state baby bonds,.5241598128997693
-2024,41,Oregon,White,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,White,Married parent households eligible for state baby bonds,1
-2024,41,Oregon,White,Household not eligbile for state baby bonds,.5072001410566903
-2024,41,Oregon,Black,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,Black,Household not eligbile for state baby bonds,.5724663644249031
-2024,41,Oregon,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,Hispanic,Married parent households eligible for state baby bonds,1
-2024,41,Oregon,Hispanic,Household not eligbile for state baby bonds,.6189436633120692
-2024,41,Oregon,Asian,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,Asian,Married parent households eligible for state baby bonds,1
-2024,41,Oregon,Asian,Household not eligbile for state baby bonds,.5209453394056552
-2024,41,Oregon,Other,Single parent households eligible for state baby bonds ,1
-2024,41,Oregon,Other,Married parent households eligible for state baby bonds,1
-2024,41,Oregon,Other,Household not eligbile for state baby bonds,.5618303414103795
-2024,42,Pennsylvania,Total,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,Total,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,Total,Household not eligbile for state baby bonds,.4345856417752976
-2024,42,Pennsylvania,White,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,White,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,White,Household not eligbile for state baby bonds,.3969112566400213
-2024,42,Pennsylvania,Black,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,Black,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,Black,Household not eligbile for state baby bonds,.6020798067801075
-2024,42,Pennsylvania,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,Hispanic,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,Hispanic,Household not eligbile for state baby bonds,.5975611425378059
-2024,42,Pennsylvania,Asian,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,Asian,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,Asian,Household not eligbile for state baby bonds,.4439678758344545
-2024,42,Pennsylvania,Other,Single parent households eligible for state baby bonds ,1
-2024,42,Pennsylvania,Other,Married parent households eligible for state baby bonds,1
-2024,42,Pennsylvania,Other,Household not eligbile for state baby bonds,.4539942869505545
-2024,44,Rhode Island,Total,Single parent households eligible for state baby bonds ,1
-2024,44,Rhode Island,Total,Married parent households eligible for state baby bonds,1
-2024,44,Rhode Island,Total,Household not eligbile for state baby bonds,.4057501738231314
-2024,44,Rhode Island,White,Single parent households eligible for state baby bonds ,1
-2024,44,Rhode Island,White,Married parent households eligible for state baby bonds,1
-2024,44,Rhode Island,White,Household not eligbile for state baby bonds,.361311199981275
-2024,44,Rhode Island,Black,Single parent households eligible for state baby bonds ,1
-2024,44,Rhode Island,Black,Married parent households eligible for state baby bonds,1
-2024,44,Rhode Island,Black,Household not eligbile for state baby bonds,.4950090072741414
-2024,44,Rhode Island,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,44,Rhode Island,Hispanic,Household not eligbile for state baby bonds,.6351798575331626
-2024,44,Rhode Island,Asian,Household not eligbile for state baby bonds,.3640852653921539
-2024,44,Rhode Island,Other,Married parent households eligible for state baby bonds,1
-2024,44,Rhode Island,Other,Household not eligbile for state baby bonds,.3810813996686379
-2024,45,South Carolina,Total,Single parent households eligible for state baby bonds ,1
-2024,45,South Carolina,Total,Married parent households eligible for state baby bonds,1
-2024,45,South Carolina,Total,Household not eligbile for state baby bonds,.4427352658115019
-2024,45,South Carolina,White,Single parent households eligible for state baby bonds ,1
-2024,45,South Carolina,White,Married parent households eligible for state baby bonds,1
-2024,45,South Carolina,White,Household not eligbile for state baby bonds,.3900108934856607
-2024,45,South Carolina,Black,Single parent households eligible for state baby bonds ,1
-2024,45,South Carolina,Black,Married parent households eligible for state baby bonds,1
-2024,45,South Carolina,Black,Household not eligbile for state baby bonds,.563225710005961
-2024,45,South Carolina,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,45,South Carolina,Hispanic,Married parent households eligible for state baby bonds,1
-2024,45,South Carolina,Hispanic,Household not eligbile for state baby bonds,.5433516027300508
-2024,45,South Carolina,Asian,Household not eligbile for state baby bonds,.3703595758085295
-2024,45,South Carolina,Other,Single parent households eligible for state baby bonds ,1
-2024,45,South Carolina,Other,Married parent households eligible for state baby bonds,1
-2024,45,South Carolina,Other,Household not eligbile for state baby bonds,.4907516466347937
-2024,46,South Dakota,Total,Single parent households eligible for state baby bonds ,1
-2024,46,South Dakota,Total,Married parent households eligible for state baby bonds,1
-2024,46,South Dakota,Total,Household not eligbile for state baby bonds,.3864664974546045
-2024,46,South Dakota,White,Single parent households eligible for state baby bonds ,1
-2024,46,South Dakota,White,Married parent households eligible for state baby bonds,1
-2024,46,South Dakota,White,Household not eligbile for state baby bonds,.3603976159227918
-2024,46,South Dakota,Black,Household not eligbile for state baby bonds,.518996631488255
-2024,46,South Dakota,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,46,South Dakota,Hispanic,Household not eligbile for state baby bonds,.5029175726633874
-2024,46,South Dakota,Asian,Household not eligbile for state baby bonds,.4176966888754177
-2024,46,South Dakota,Other,Single parent households eligible for state baby bonds ,1
-2024,46,South Dakota,Other,Married parent households eligible for state baby bonds,1
-2024,46,South Dakota,Other,Household not eligbile for state baby bonds,.5640757068283828
-2024,47,Tennessee,Total,Single parent households eligible for state baby bonds ,1
-2024,47,Tennessee,Total,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,Total,Household not eligbile for state baby bonds,.4131397956450715
-2024,47,Tennessee,White,Single parent households eligible for state baby bonds ,1
-2024,47,Tennessee,White,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,White,Household not eligbile for state baby bonds,.3712370056698676
-2024,47,Tennessee,Black,Single parent households eligible for state baby bonds ,1
-2024,47,Tennessee,Black,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,Black,Household not eligbile for state baby bonds,.5531598014135272
-2024,47,Tennessee,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,47,Tennessee,Hispanic,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,Hispanic,Household not eligbile for state baby bonds,.566361532259225
-2024,47,Tennessee,Asian,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,Asian,Household not eligbile for state baby bonds,.376131306682137
-2024,47,Tennessee,Other,Single parent households eligible for state baby bonds ,1
-2024,47,Tennessee,Other,Married parent households eligible for state baby bonds,1
-2024,47,Tennessee,Other,Household not eligbile for state baby bonds,.4792683568797972
-2024,48,Texas,Total,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,Total,Married parent households eligible for state baby bonds,1
-2024,48,Texas,Total,Household not eligbile for state baby bonds,.4188723307736766
-2024,48,Texas,White,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,White,Married parent households eligible for state baby bonds,1
-2024,48,Texas,White,Household not eligbile for state baby bonds,.3297427100075718
-2024,48,Texas,Black,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,Black,Married parent households eligible for state baby bonds,1
-2024,48,Texas,Black,Household not eligbile for state baby bonds,.4779689438572295
-2024,48,Texas,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,Hispanic,Married parent households eligible for state baby bonds,1
-2024,48,Texas,Hispanic,Household not eligbile for state baby bonds,.5343107255197935
-2024,48,Texas,Asian,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,Asian,Married parent households eligible for state baby bonds,1
-2024,48,Texas,Asian,Household not eligbile for state baby bonds,.3376750753218109
-2024,48,Texas,Other,Single parent households eligible for state baby bonds ,1
-2024,48,Texas,Other,Married parent households eligible for state baby bonds,1
-2024,48,Texas,Other,Household not eligbile for state baby bonds,.3939393202629924
-2024,99999,United States,Total,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,Total,Married parent households eligible for state baby bonds,1
-2024,99999,United States,Total,Household not eligbile for state baby bonds,.4508312132888956
-2024,99999,United States,White,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,White,Married parent households eligible for state baby bonds,1
-2024,99999,United States,White,Household not eligbile for state baby bonds,.3976930335024491
-2024,99999,United States,Black,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,Black,Married parent households eligible for state baby bonds,1
-2024,99999,United States,Black,Household not eligbile for state baby bonds,.5670471998835457
-2024,99999,United States,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,Hispanic,Married parent households eligible for state baby bonds,1
-2024,99999,United States,Hispanic,Household not eligbile for state baby bonds,.585899150011137
-2024,99999,United States,Asian,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,Asian,Married parent households eligible for state baby bonds,1
-2024,99999,United States,Asian,Household not eligbile for state baby bonds,.4317217686699151
-2024,99999,United States,Other,Single parent households eligible for state baby bonds ,1
-2024,99999,United States,Other,Married parent households eligible for state baby bonds,1
-2024,99999,United States,Other,Household not eligbile for state baby bonds,.4795028187243236
-2024,49,Utah,Total,Single parent households eligible for state baby bonds ,1
-2024,49,Utah,Total,Married parent households eligible for state baby bonds,1
-2024,49,Utah,Total,Household not eligbile for state baby bonds,.4368767457728341
-2024,49,Utah,White,Single parent households eligible for state baby bonds ,1
-2024,49,Utah,White,Married parent households eligible for state baby bonds,1
-2024,49,Utah,White,Household not eligbile for state baby bonds,.4082661416126522
-2024,49,Utah,Black,Single parent households eligible for state baby bonds ,1
-2024,49,Utah,Black,Married parent households eligible for state baby bonds,1
-2024,49,Utah,Black,Household not eligbile for state baby bonds,.5492510454519802
-2024,49,Utah,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,49,Utah,Hispanic,Married parent households eligible for state baby bonds,1
-2024,49,Utah,Hispanic,Household not eligbile for state baby bonds,.5862662524721413
-2024,49,Utah,Asian,Married parent households eligible for state baby bonds,1
-2024,49,Utah,Asian,Household not eligbile for state baby bonds,.4375835577324711
-2024,49,Utah,Other,Single parent households eligible for state baby bonds ,1
-2024,49,Utah,Other,Married parent households eligible for state baby bonds,1
-2024,49,Utah,Other,Household not eligbile for state baby bonds,.4808244087656229
-2024,50,Vermont,Total,Single parent households eligible for state baby bonds ,1
-2024,50,Vermont,Total,Household not eligbile for state baby bonds,.4307114719697214
-2024,50,Vermont,White,Single parent households eligible for state baby bonds ,1
-2024,50,Vermont,White,Household not eligbile for state baby bonds,.4206856736193343
-2024,50,Vermont,Black,Household not eligbile for state baby bonds,.2917332420409045
-2024,50,Vermont,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,50,Vermont,Hispanic,Household not eligbile for state baby bonds,.4712174394753573
-2024,50,Vermont,Asian,Single parent households eligible for state baby bonds ,1
-2024,50,Vermont,Asian,Household not eligbile for state baby bonds,.5031257936708841
-2024,50,Vermont,Other,Single parent households eligible for state baby bonds ,1
-2024,50,Vermont,Other,Household not eligbile for state baby bonds,.6141953178362521
-2024,51,Virginia,Total,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,Total,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,Total,Household not eligbile for state baby bonds,.4123972612315763
-2024,51,Virginia,White,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,White,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,White,Household not eligbile for state baby bonds,.3665663257704536
-2024,51,Virginia,Black,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,Black,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,Black,Household not eligbile for state baby bonds,.4970362634355781
-2024,51,Virginia,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,Hispanic,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,Hispanic,Household not eligbile for state baby bonds,.5588644449471681
-2024,51,Virginia,Asian,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,Asian,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,Asian,Household not eligbile for state baby bonds,.4169179739004514
-2024,51,Virginia,Other,Single parent households eligible for state baby bonds ,1
-2024,51,Virginia,Other,Married parent households eligible for state baby bonds,1
-2024,51,Virginia,Other,Household not eligbile for state baby bonds,.4320206230740181
-2024,53,Washington,Total,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,Total,Married parent households eligible for state baby bonds,1
-2024,53,Washington,Total,Household not eligbile for state baby bonds,.4164912581742981
-2024,53,Washington,White,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,White,Married parent households eligible for state baby bonds,1
-2024,53,Washington,White,Household not eligbile for state baby bonds,.392121469027671
-2024,53,Washington,Black,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,Black,Married parent households eligible for state baby bonds,1
-2024,53,Washington,Black,Household not eligbile for state baby bonds,.5541372604615428
-2024,53,Washington,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,Hispanic,Married parent households eligible for state baby bonds,1
-2024,53,Washington,Hispanic,Household not eligbile for state baby bonds,.5618201943590809
-2024,53,Washington,Asian,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,Asian,Married parent households eligible for state baby bonds,1
-2024,53,Washington,Asian,Household not eligbile for state baby bonds,.3713507485821367
-2024,53,Washington,Other,Single parent households eligible for state baby bonds ,1
-2024,53,Washington,Other,Married parent households eligible for state baby bonds,1
-2024,53,Washington,Other,Household not eligbile for state baby bonds,.4328751368983671
-2024,54,West Virginia,Total,Single parent households eligible for state baby bonds ,1
-2024,54,West Virginia,Total,Married parent households eligible for state baby bonds,1
-2024,54,West Virginia,Total,Household not eligbile for state baby bonds,.5239861557648856
-2024,54,West Virginia,White,Single parent households eligible for state baby bonds ,1
-2024,54,West Virginia,White,Married parent households eligible for state baby bonds,1
-2024,54,West Virginia,White,Household not eligbile for state baby bonds,.516590108414846
-2024,54,West Virginia,Black,Single parent households eligible for state baby bonds ,1
-2024,54,West Virginia,Black,Married parent households eligible for state baby bonds,1
-2024,54,West Virginia,Black,Household not eligbile for state baby bonds,.6084943684635367
-2024,54,West Virginia,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,54,West Virginia,Hispanic,Household not eligbile for state baby bonds,.5679656430157272
-2024,54,West Virginia,Asian,Household not eligbile for state baby bonds,.3463541982074109
-2024,54,West Virginia,Other,Single parent households eligible for state baby bonds ,1
-2024,54,West Virginia,Other,Married parent households eligible for state baby bonds,1
-2024,54,West Virginia,Other,Household not eligbile for state baby bonds,.6447048010378232
-2024,55,Wisconsin,Total,Single parent households eligible for state baby bonds ,1
-2024,55,Wisconsin,Total,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,Total,Household not eligbile for state baby bonds,.4183159474417466
-2024,55,Wisconsin,White,Single parent households eligible for state baby bonds ,1
-2024,55,Wisconsin,White,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,White,Household not eligbile for state baby bonds,.3964243154749237
-2024,55,Wisconsin,Black,Single parent households eligible for state baby bonds ,1
-2024,55,Wisconsin,Black,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,Black,Household not eligbile for state baby bonds,.5914990238191532
-2024,55,Wisconsin,Hispanic,Single parent households eligible for state baby bonds ,1
-2024,55,Wisconsin,Hispanic,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,Hispanic,Household not eligbile for state baby bonds,.5852953232677716
-2024,55,Wisconsin,Asian,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,Asian,Household not eligbile for state baby bonds,.3609400451371291
-2024,55,Wisconsin,Other,Single parent households eligible for state baby bonds ,1
-2024,55,Wisconsin,Other,Married parent households eligible for state baby bonds,1
-2024,55,Wisconsin,Other,Household not eligbile for state baby bonds,.4392207588659441
-2024,56,Wyoming,Total,Single parent households eligible for state baby bonds ,1
-2024,56,Wyoming,Total,Married parent households eligible for state baby bonds,1
-2024,56,Wyoming,Total,Household not eligbile for state baby bonds,.4339730734399413
-2024,56,Wyoming,White,Single parent households eligible for state baby bonds ,1
-2024,56,Wyoming,White,Married parent households eligible for state baby bonds,1
-2024,56,Wyoming,White,Household not eligbile for state baby bonds,.4082697442918349
-2024,56,Wyoming,Black,Household not eligbile for state baby bonds,.3754953790490542
-2024,56,Wyoming,Hispanic,Household not eligbile for state baby bonds,.6719417927435434
-2024,56,Wyoming,Asian,Household not eligbile for state baby bonds,.1372645656729669
-2024,56,Wyoming,Other,Household not eligbile for state baby bonds,.5131070542737852
+year,area,area_name,racecomp,h_med_rev
+2024,1,Alabama,Total,.024434993
+2024,1,Alabama,White,.017410442
+2024,1,Alabama,Black,.03266748
+2024,1,Alabama,Hispanic,.058996692
+2024,1,Alabama,Asian,.02192894
+2024,1,Alabama,Other,.020275759
+2024,2,Alaska,Total,.026603488
+2024,2,Alaska,White,.020744102
+2024,2,Alaska,Black,0
+2024,2,Alaska,Hispanic,.019413335
+2024,2,Alaska,Asian,.025485
+2024,2,Alaska,Other,.044007048
+2024,4,Arizona,Total,.017911131
+2024,4,Arizona,White,.011687354
+2024,4,Arizona,Black,.030289687
+2024,4,Arizona,Hispanic,.025814295
+2024,4,Arizona,Asian,.011758372
+2024,4,Arizona,Other,.025424257
+2024,5,Arkansas,Total,.024249041
+2024,5,Arkansas,White,.020554572
+2024,5,Arkansas,Black,.032880981
+2024,5,Arkansas,Hispanic,.0236072
+2024,5,Arkansas,Asian,.0014072108
+2024,5,Arkansas,Other,.040998708
+2024,6,California,Total,.03699892
+2024,6,California,White,.021858519
+2024,6,California,Black,.048354615
+2024,6,California,Hispanic,.049866855
+2024,6,California,Asian,.032642011
+2024,6,California,Other,.044609666
+2024,8,Colorado,Total,.017206077
+2024,8,Colorado,White,.011832101
+2024,8,Colorado,Black,.019465279
+2024,8,Colorado,Hispanic,.031573139
+2024,8,Colorado,Asian,.011583718
+2024,8,Colorado,Other,.019767698
+2024,9,Connecticut,Total,.027625186
+2024,9,Connecticut,White,.016849032
+2024,9,Connecticut,Black,.0501027
+2024,9,Connecticut,Hispanic,.039579321
+2024,9,Connecticut,Asian,.032245532
+2024,9,Connecticut,Other,.039609067
+2024,10,Delaware,Total,.019880259
+2024,10,Delaware,White,.0034516098
+2024,10,Delaware,Black,.034551933
+2024,10,Delaware,Hispanic,.024396218
+2024,10,Delaware,Asian,.056882128
+2024,10,Delaware,Other,.12987553
+2024,11,District of Columbia,Total,.050817765
+2024,11,District of Columbia,White,0
+2024,11,District of Columbia,Black,.065501049
+2024,11,District of Columbia,Hispanic,.020114185
+2024,11,District of Columbia,Asian,.073371157
+2024,11,District of Columbia,Other,.11788037
+2024,12,Florida,Total,.017793121
+2024,12,Florida,White,.010278946
+2024,12,Florida,Black,.030060086
+2024,12,Florida,Hispanic,.02322544
+2024,12,Florida,Asian,.034303576
+2024,12,Florida,Other,.011519424
+2024,13,Georgia,Total,.019419545
+2024,13,Georgia,White,.010698021
+2024,13,Georgia,Black,.02791822
+2024,13,Georgia,Hispanic,.022686059
+2024,13,Georgia,Asian,.020636149
+2024,13,Georgia,Other,.032974038
+2024,15,Hawaii,Total,.016196596
+2024,15,Hawaii,White,.009387563
+2024,15,Hawaii,Black,0
+2024,15,Hawaii,Hispanic,.013174626
+2024,15,Hawaii,Asian,.01553885
+2024,15,Hawaii,Other,.030365011
+2024,16,Idaho,Total,.018293167
+2024,16,Idaho,White,.016095428
+2024,16,Idaho,Black,.016052213
+2024,16,Idaho,Hispanic,.020602208
+2024,16,Idaho,Asian,.047593169
+2024,16,Idaho,Other,.03591112
+2024,17,Illinois,Total,.025529932
+2024,17,Illinois,White,.015935216
+2024,17,Illinois,Black,.042908888
+2024,17,Illinois,Hispanic,.036133356
+2024,17,Illinois,Asian,.021169081
+2024,17,Illinois,Other,.04293821
+2024,18,Indiana,Total,.026181202
+2024,18,Indiana,White,.020331152
+2024,18,Indiana,Black,.044373251
+2024,18,Indiana,Hispanic,.049157422
+2024,18,Indiana,Asian,.027428389
+2024,18,Indiana,Other,.035618823
+2024,19,Iowa,Total,.020603452
+2024,19,Iowa,White,.011573137
+2024,19,Iowa,Black,.14711836
+2024,19,Iowa,Hispanic,.022992875
+2024,19,Iowa,Asian,.019548664
+2024,19,Iowa,Other,.027423386
+2024,20,Kansas,Total,.01330314
+2024,20,Kansas,White,.010731601
+2024,20,Kansas,Black,.0064360215
+2024,20,Kansas,Hispanic,.027444202
+2024,20,Kansas,Asian,.026625054
+2024,20,Kansas,Other,.014497492
+2024,21,Kentucky,Total,.0038769916
+2024,21,Kentucky,White,.0037731444
+2024,21,Kentucky,Black,.0045535518
+2024,21,Kentucky,Hispanic,.0058587221
+2024,21,Kentucky,Asian,.004890176
+2024,21,Kentucky,Other,.001825636
+2024,22,Louisiana,Total,.028150139
+2024,22,Louisiana,White,.017318254
+2024,22,Louisiana,Black,.039108984
+2024,22,Louisiana,Hispanic,.051666345
+2024,22,Louisiana,Asian,.0063329353
+2024,22,Louisiana,Other,.020600973
+2024,23,Maine,Total,.024667894
+2024,23,Maine,White,.022724666
+2024,23,Maine,Black,.081317201
+2024,23,Maine,Hispanic,.084083386
+2024,23,Maine,Asian,0
+2024,23,Maine,Other,.02103864
+2024,24,Maryland,Total,.0058145584
+2024,24,Maryland,White,.0027477306
+2024,24,Maryland,Black,.0086676069
+2024,24,Maryland,Hispanic,.0047883838
+2024,24,Maryland,Asian,.0078080939
+2024,24,Maryland,Other,.011892767
+2024,25,Massachusetts,Total,.018206907
+2024,25,Massachusetts,White,.0090655284
+2024,25,Massachusetts,Black,.027033439
+2024,25,Massachusetts,Hispanic,.05163186
+2024,25,Massachusetts,Asian,.0094430409
+2024,25,Massachusetts,Other,.029647531
+2024,26,Michigan,Total,.028291626
+2024,26,Michigan,White,.022257388
+2024,26,Michigan,Black,.042831998
+2024,26,Michigan,Hispanic,.04196215
+2024,26,Michigan,Asian,.035997611
+2024,26,Michigan,Other,.043181188
+2024,27,Minnesota,Total,.021025956
+2024,27,Minnesota,White,.015955416
+2024,27,Minnesota,Black,.048904583
+2024,27,Minnesota,Hispanic,.016179666
+2024,27,Minnesota,Asian,.015214783
+2024,27,Minnesota,Other,.060400702
+2024,28,Mississippi,Total,.032618884
+2024,28,Mississippi,White,.014557441
+2024,28,Mississippi,Black,.051275201
+2024,28,Mississippi,Hispanic,.014539278
+2024,28,Mississippi,Asian,0
+2024,28,Mississippi,Other,.073839128
+2024,29,Missouri,Total,.018659279
+2024,29,Missouri,White,.016921109
+2024,29,Missouri,Black,.026665457
+2024,29,Missouri,Hispanic,.020033292
+2024,29,Missouri,Asian,.013210443
+2024,29,Missouri,Other,.020721287
+2024,30,Montana,Total,.013115069
+2024,30,Montana,White,.0092049502
+2024,30,Montana,Black,0
+2024,30,Montana,Hispanic,.020293316
+2024,30,Montana,Asian,0
+2024,30,Montana,Other,.036356922
+2024,31,Nebraska,Total,.024506237
+2024,31,Nebraska,White,.015326801
+2024,31,Nebraska,Black,.035535078
+2024,31,Nebraska,Hispanic,.072205827
+2024,31,Nebraska,Asian,.038707159
+2024,31,Nebraska,Other,.023041779
+2024,32,Nevada,Total,.01574542
+2024,32,Nevada,White,.008592627
+2024,32,Nevada,Black,.0335976
+2024,32,Nevada,Hispanic,.015817756
+2024,32,Nevada,Asian,.022737809
+2024,32,Nevada,Other,.023151873
+2024,33,New Hampshire,Total,.01188557
+2024,33,New Hampshire,White,.010544648
+2024,33,New Hampshire,Black,0
+2024,33,New Hampshire,Hispanic,.031728081
+2024,33,New Hampshire,Asian,0
+2024,33,New Hampshire,Other,.036316689
+2024,34,New Jersey,Total,.02336245
+2024,34,New Jersey,White,.012179578
+2024,34,New Jersey,Black,.035217345
+2024,34,New Jersey,Hispanic,.033377089
+2024,34,New Jersey,Asian,.037381485
+2024,34,New Jersey,Other,.024895938
+2024,35,New Mexico,Total,.027343152
+2024,35,New Mexico,White,.0091709057
+2024,35,New Mexico,Black,.012032527
+2024,35,New Mexico,Hispanic,.040828172
+2024,35,New Mexico,Asian,.025564404
+2024,35,New Mexico,Other,.028418515
+2024,36,New York,Total,.039619971
+2024,36,New York,White,.027473364
+2024,36,New York,Black,.04969772
+2024,36,New York,Hispanic,.053009506
+2024,36,New York,Asian,.04987992
+2024,36,New York,Other,.048650306
+2024,37,North Carolina,Total,.026583346
+2024,37,North Carolina,White,.016892312
+2024,37,North Carolina,Black,.040501881
+2024,37,North Carolina,Hispanic,.042687763
+2024,37,North Carolina,Asian,.036288753
+2024,37,North Carolina,Other,.025836531
+2024,38,North Dakota,Total,.040089902
+2024,38,North Dakota,White,.016441356
+2024,38,North Dakota,Black,.25261986
+2024,38,North Dakota,Hispanic,.15104559
+2024,38,North Dakota,Asian,0
+2024,38,North Dakota,Other,.084825128
+2024,39,Ohio,Total,.023962196
+2024,39,Ohio,White,.016800053
+2024,39,Ohio,Black,.04743664
+2024,39,Ohio,Hispanic,.027415631
+2024,39,Ohio,Asian,.025793057
+2024,39,Ohio,Other,.040901568
+2024,40,Oklahoma,Total,.033707358
+2024,40,Oklahoma,White,.027689794
+2024,40,Oklahoma,Black,.053045157
+2024,40,Oklahoma,Hispanic,.041902266
+2024,40,Oklahoma,Asian,.036484681
+2024,40,Oklahoma,Other,.041761808
+2024,41,Oregon,Total,.013729763
+2024,41,Oregon,White,.012041199
+2024,41,Oregon,Black,.03663557
+2024,41,Oregon,Hispanic,.0189355
+2024,41,Oregon,Asian,.012449601
+2024,41,Oregon,Other,.0173147
+2024,42,Pennsylvania,Total,.018738527
+2024,42,Pennsylvania,White,.013526657
+2024,42,Pennsylvania,Black,.027759548
+2024,42,Pennsylvania,Hispanic,.034263339
+2024,42,Pennsylvania,Asian,.026951194
+2024,42,Pennsylvania,Other,.036405284
+2024,44,Rhode Island,Total,.032710359
+2024,44,Rhode Island,White,.015580349
+2024,44,Rhode Island,Black,.10438243
+2024,44,Rhode Island,Hispanic,.066792071
+2024,44,Rhode Island,Asian,.066530563
+2024,44,Rhode Island,Other,.0043935832
+2024,45,South Carolina,Total,.033749729
+2024,45,South Carolina,White,.022736656
+2024,45,South Carolina,Black,.055039015
+2024,45,South Carolina,Hispanic,.036488771
+2024,45,South Carolina,Asian,0
+2024,45,South Carolina,Other,.036959462
+2024,46,South Dakota,Total,.018108571
+2024,46,South Dakota,White,.006467788
+2024,46,South Dakota,Black,0
+2024,46,South Dakota,Hispanic,.04487849
+2024,46,South Dakota,Asian,0
+2024,46,South Dakota,Other,.085471116
+2024,47,Tennessee,Total,.023429533
+2024,47,Tennessee,White,.015371305
+2024,47,Tennessee,Black,.046567332
+2024,47,Tennessee,Hispanic,.032695025
+2024,47,Tennessee,Asian,.029321807
+2024,47,Tennessee,Other,.021159038
+2024,48,Texas,Total,.027492462
+2024,48,Texas,White,.015393736
+2024,48,Texas,Black,.032557569
+2024,48,Texas,Hispanic,.03685439
+2024,48,Texas,Asian,.01678825
+2024,48,Texas,Other,.028764019
+2024,99999,United States,Total,.024651088
+2024,99999,United States,White,.015737416
+2024,99999,United States,Black,.037351437
+2024,99999,United States,Hispanic,.037825987
+2024,99999,United States,Asian,.027569301
+2024,99999,United States,Other,.032332391
+2024,49,Utah,Total,.018853452
+2024,49,Utah,White,.016349001
+2024,49,Utah,Black,.12330417
+2024,49,Utah,Hispanic,.024894217
+2024,49,Utah,Asian,.0030682979
+2024,49,Utah,Other,.019049684
+2024,50,Vermont,Total,.0024433844
+2024,50,Vermont,White,.0021717618
+2024,50,Vermont,Black,0
+2024,50,Vermont,Hispanic,.0094069
+2024,50,Vermont,Asian,.00796548
+2024,50,Vermont,Other,.002868132
+2024,51,Virginia,Total,.019454543
+2024,51,Virginia,White,.015720198
+2024,51,Virginia,Black,.02227325
+2024,51,Virginia,Hispanic,.034347177
+2024,51,Virginia,Asian,.0147241
+2024,51,Virginia,Other,.021268053
+2024,53,Washington,Total,.015063092
+2024,53,Washington,White,.012608696
+2024,53,Washington,Black,.024299933
+2024,53,Washington,Hispanic,.028057618
+2024,53,Washington,Asian,.0091119315
+2024,53,Washington,Other,.012716988
+2024,54,West Virginia,Total,.02191904
+2024,54,West Virginia,White,.020556932
+2024,54,West Virginia,Black,.011016113
+2024,54,West Virginia,Hispanic,.066400275
+2024,54,West Virginia,Asian,0
+2024,54,West Virginia,Other,.038308404
+2024,55,Wisconsin,Total,.0158576
+2024,55,Wisconsin,White,.010929587
+2024,55,Wisconsin,Black,.047494911
+2024,55,Wisconsin,Hispanic,.022174546
+2024,55,Wisconsin,Asian,.032314599
+2024,55,Wisconsin,Other,.029745761
+2024,56,Wyoming,Total,.0090623591
+2024,56,Wyoming,White,.011393887
+2024,56,Wyoming,Black,0
+2024,56,Wyoming,Hispanic,0
+2024,56,Wyoming,Asian,0
+2024,56,Wyoming,Other,0
