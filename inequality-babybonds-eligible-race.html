@@ -459,7 +459,7 @@ body {
 
 <script>
 (function () {
-  const CSV_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/exp-childcare-tile-map.csv";
+  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/main/state_medicaid_eligible_race.csv";
   const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
 
   const BASE_TILE_SIZE = 58;
@@ -608,7 +608,7 @@ body {
         area: normalizeArea(pick(clean, ["area","fips","state_fips","state","state_id","id"]), abbrToFips),
         area_name: pick(clean, ["area_name","state_name","name"]),
         racecomp: String(pick(clean, ["racecomp","race_comp","race","RACECOMP"])),
-        ss: Number(pick(clean, ["ss","SS","value","Value","exp"]))
+        ss: Number(pick(clean, ["ss","SS","value","Value","exp", "h_med_rev"]))
       };
     }).filter(d => d.area && Number.isFinite(d.ss));
   }
