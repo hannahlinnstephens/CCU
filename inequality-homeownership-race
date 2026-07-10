@@ -534,7 +534,7 @@ body {
 
 <script>
 (function () {
-  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/refs/heads/main/state_medicaid_eligible_race.csv";
+  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/main/state_businessownership_race.csv";
   const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
 
   const BASE_TILE_SIZE = 58;
@@ -758,9 +758,9 @@ body {
         year: pick(clean, ["year", "Year", "YEAR"]),
         area: normalizeArea(pick(clean, ["area", "fips", "state_fips", "state", "state_id", "id"]), abbrToFips),
         area_name: pick(clean, ["area_name", "state_name", "name"]),
-        xtype: String(pick(clean, ["xtype", "XTYPE", "med_elg"])),
+        xtype: String(pick(clean, ["xtype", "XTYPE"])),
         racecomp: String(pick(clean, ["racecomp", "race_comp", "race", "RACECOMP"])),
-        ss: Number(pick(clean, ["ss", "SS", "value", "Value", "ssh_net_rev"]))
+        ss: Number(pick(clean, ["ss", "SS", "value", "Value", "hp"]))
       };
     }).filter(d => d.area && Number.isFinite(d.ss));
   }
