@@ -534,7 +534,7 @@ body {
 
 <script>
 (function () {
-  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/refs/heads/main/state_medicaid_eligible_race.csv";
+  const CSV_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/ss-childcare-tile-map.csv";
   const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
 
   const BASE_TILE_SIZE = 58;
@@ -545,8 +545,6 @@ body {
   const MAP_BOTTOM_PAD = 10;
   const NO_DATA_COLOR = "#C8C5BC";
   const US_AREA = "99999";
-
-  const ALLOWED_XTYPE_VALUES = ["Share of struggling households","Difference (% pts.)"];
 
   const PALETTE = [
   "#C9550A",
@@ -582,10 +580,10 @@ body {
   let latestYear = null;
   let latestYearIsNumeric = true;
   let selectedXtype = "";
-
-  let xtypeBreaks = {};
+  let fixedBreaks = [];
+  let fixedMin = null;
+  let fixedMax = null;
   let xtypeValues = [];
-  let buttonXtypeValues = [];
   let raceValues = [];
   let lastAvailableWidth = 0;
   let resizeTimer = null;
@@ -757,12 +755,12 @@ body {
 
       return {
         _order: i,
-        year: pick(clean, ["year","Year","YEAR"]),
-        area: normalizeArea(pick(clean, ["area","fips","state_fips","state","state_id","id"]), abbrToFips),
-        area_name: pick(clean, ["area_name","state_name","name"]),
-        racecomp: String(pick(clean, ["racecomp","race_comp","race","RACECOMP"])),
+        year: pick(clean, ["year", "Year", "YEAR"]),
+        area: normalizeArea(pick(clean, ["area", "fips", "state_fips", "state", "state_id", "id"]), abbrToFips),
+        area_name: pick(clean, ["area_name", "state_name", "name"]),
         xtype: String(pick(clean, ["xtype", "XTYPE", "med_elg"])),
-        ss: Number(pick(clean, ["ss","SS","value","Value","exp", "hp", "rev_med_elg"]))
+        racecomp: String(pick(clean, ["racecomp", "race_comp", "race", "RACECOMP"])),
+        ss: Number(pick(clean, ["ss", "SS", "value", "Value", "ssh_net_rev"]))
       };
     }).filter(d => d.area && Number.isFinite(d.ss));
   }
@@ -818,31 +816,9 @@ body {
   return breaks;
 }
 
-  function computeXtypeBreaks(data) {
-    const latestData = data.filter(isLatestYearRow);
-    const breaksMap = {};
-
-    xtypeValues.forEach(x => {
-      const values = latestData
-        .filter(d => String(d.xtype) === String(x))
-        .map(d => Number(d.ss))
-        .filter(Number.isFinite);
-
-      const breaks = quantileBreaks(values, 25);
-
-      breaksMap[x] = {
-        breaks,
-        min: breaks.length ? breaks[0] : null,
-        max: breaks.length ? breaks[breaks.length - 1] : null
-      };
-    });
-
-    return breaksMap;
-  }
-
   function colorForValue(value, breaks) {
     const v = Number(value);
-    if (!Number.isFinite(v) || !breaks || !breaks.length) return NO_DATA_COLOR;
+    if (!Number.isFinite(v) || !breaks.length) return NO_DATA_COLOR;
 
     for (let i = 1; i < breaks.length; i++) {
       if (v <= breaks[i]) return PALETTE[i - 1];
@@ -851,15 +827,10 @@ body {
     return PALETTE[PALETTE.length - 1];
   }
 
-  function barPct(value, xtype) {
+  function barPct(value) {
     const v = Number(value);
-    const ctx = xtypeBreaks[xtype];
-
-    if (!Number.isFinite(v) || !ctx || ctx.min === null || ctx.max === null || ctx.max === ctx.min) {
-      return 0;
-    }
-
-    return Math.max(0, Math.min(100, ((v - ctx.min) / (ctx.max - ctx.min)) * 100));
+    if (!Number.isFinite(v) || fixedMin === null || fixedMax === null || fixedMax === fixedMin) return 0;
+    return Math.max(0, Math.min(100, ((v - fixedMin) / (fixedMax - fixedMin)) * 100));
   }
 
   function getStateRows(fips) {
@@ -901,15 +872,14 @@ body {
         <tbody>
   `;
 
-  raceValues.forEach(r => {
+  raceValues.forEach(r => {   // 2. was xtypeValues
     html += `<tr><td class="mtm-mini-rowhead">${esc(r)}</td>`;
 
-    xtypeValues.forEach(x => {
-      const row = byCombo[`${x}|||${r}`];
+    xtypeValues.forEach(x => {   // 3. was raceValues
+      const row = byCombo[`${x}|||${r}`];   // key order stays the same — no change needed here
       const v = row ? Number(row.ss) : NaN;
-      const ctx = xtypeBreaks[x] || { breaks: [] };
-      const color = Number.isFinite(v) ? colorForValue(v, ctx.breaks) : "#bbb";
-      const pct = barPct(v, x);
+      const color = Number.isFinite(v) ? colorForValue(v, fixedBreaks) : "#bbb";
+      const pct = barPct(v);
 
       html += `
         <td class="mtm-mini-cell">
@@ -1206,16 +1176,12 @@ body {
     xtypeValues = uniqueInDataOrder(latestData, "xtype");
     raceValues = uniqueInDataOrder(latestData, "racecomp");
 
-    buttonXtypeValues = ALLOWED_XTYPE_VALUES.length
-      ? xtypeValues.filter(v => ALLOWED_XTYPE_VALUES.includes(v))
-      : xtypeValues;
-
-    selectedXtype = buttonXtypeValues[0] || "";
+    selectedXtype = xtypeValues[0] || "";
 
     const btnWrap = document.getElementById("mtm-xtype-buttons");
     btnWrap.innerHTML = "";
 
-    buttonXtypeValues.forEach(v => {
+    xtypeValues.forEach(v => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "mtm-xbtn";
@@ -1234,7 +1200,6 @@ body {
         });
 
         updateMap();
-        buildLegend(xtypeBreaks[selectedXtype]?.breaks || []);
       });
 
       btnWrap.appendChild(btn);
@@ -1270,11 +1235,12 @@ body {
     filtered.forEach(d => {
       const fips = String(d.area).padStart(2, "0");
 
-
+      /*
+        Use ss directly. If duplicate rows exist for the same state/filter,
+        use the first row in the CSV's original order.
+      */
       if (!byState[fips]) byState[fips] = d;
     });
-
-    const ctx = xtypeBreaks[selectedXtype] || { breaks: [] };
 
     Object.keys(tiles).forEach(fips => {
       const tile = tiles[fips];
@@ -1282,7 +1248,7 @@ body {
 
       if (row && Number.isFinite(Number(row.ss))) {
         const value = Number(row.ss);
-        const color = colorForValue(value, ctx.breaks);
+        const color = colorForValue(value, fixedBreaks);
 
         tile.style.background = color;
         tile.style.color = luma(color) > 0.58
@@ -1300,14 +1266,14 @@ body {
     showDefaultTooltip();
   }
 
-  function buildLegend(breaks) {
+  function buildLegend() {
     const bar = document.getElementById("mtm-leg-bar");
     const minEl = document.getElementById("mtm-leg-min");
     const maxEl = document.getElementById("mtm-leg-max");
 
     bar.innerHTML = "";
 
-    if (!breaks || !breaks.length) {
+    if (!fixedBreaks.length) {
       minEl.textContent = "";
       maxEl.textContent = "";
       return;
@@ -1318,12 +1284,12 @@ body {
       swatch.style.width = `${Math.max(8, Math.floor(300 / PALETTE.length))}px`;
       swatch.style.height = "14px";
       swatch.style.background = color;
-      swatch.title = `${fmtSS(breaks[i])} – ${fmtSS(breaks[i + 1])}`;
+      swatch.title = `${fmtSS(fixedBreaks[i])} – ${fmtSS(fixedBreaks[i + 1])}`;
       bar.appendChild(swatch);
     });
 
-    minEl.textContent = fmtSS(breaks[0]);
-    maxEl.textContent = fmtSS(breaks[breaks.length - 1]);
+    minEl.textContent = fmtSS(fixedBreaks[0]);
+    maxEl.textContent = fmtSS(fixedBreaks[fixedBreaks.length - 1]);
   }
 
   async function init() {
@@ -1350,11 +1316,16 @@ body {
       allData = normalizeRows(parsed.data, states);
       setLatestYear(allData);
 
-      populateFilters(allData);
-      xtypeBreaks = computeXtypeBreaks(allData);
+      const latestData = allData.filter(isLatestYearRow);
+      const allLatestValues = latestData.map(d => Number(d.ss)).filter(Number.isFinite);
 
+      fixedBreaks = quantileBreaks(allLatestValues, 25);
+      fixedMin = fixedBreaks[0];
+      fixedMax = fixedBreaks[fixedBreaks.length - 1];
+
+      populateFilters(allData);
       buildMap();
-      buildLegend(xtypeBreaks[selectedXtype]?.breaks || []);
+      buildLegend();
       updateMap();
 
       if ("ResizeObserver" in window) {
