@@ -1,0 +1,1112 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+#map-tile-root,
+#map-tile-root * {
+  box-sizing: border-box;
+  font-family: "Inter", Arial, Helvetica, sans-serif !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+html,
+body {
+  min-height: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#map-tile-root {
+  --mtm-graphic-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  color: var(--color-text-primary, #191919);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mtm-header {
+  width: 100%;
+  margin: 0 auto 18px auto;
+}
+
+.mtm-title {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-text-primary, #191919);
+}
+
+.mtm-subtitle {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--color-text-primary, #191919);
+}
+
+.mtm-controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: clamp(8px, 1.8vw, 18px);
+  align-items: flex-start;
+  margin-bottom: 14px;
+  overflow-x: visible;
+}
+
+.mtm-ctrl {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 173px;
+  width: min(100%, 200px);
+  max-width: 200px;
+  min-width: 0;
+}
+
+.mtm-ctrl label {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 6px;
+  letter-spacing: .02em;
+  font-weight: 700;
+}
+
+.mtm-ctrl select {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 6px 34px 6px 10px;
+  height: auto;
+  min-height: 34.2969px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-secondary, #d6d6d6);
+  background-color: var(--color-background-primary, #fff);
+  color: var(--color-text-primary, #191919);
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.mtm-legend {
+  display: grid;
+  grid-template-columns: minmax(42px, 1fr) minmax(120px, 300px) minmax(42px, 1fr);
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 10px;
+  left: var(--mtm-legend-center, 50%);
+  z-index: 5;
+  transform: translateX(-50%);
+  width: clamp(180px, 56%, 460px);
+  max-width: calc(100% - 96px);
+  margin: 0;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary, #666);
+}
+
+.mtm-legend-bar {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  min-width: 0;
+  width: 100%;
+}
+
+.mtm-legend span {
+  white-space: nowrap;
+}
+
+#mtm-leg-min {
+  justify-self: end;
+}
+
+#mtm-leg-max {
+  justify-self: start;
+}
+
+.mtm-legend-bar > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.mtm-chart-scroll {
+  overflow-x: hidden;
+  width: min(100%, var(--mtm-graphic-width));
+  display: flex;
+  justify-content: center;
+}
+
+.mtm-chart-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#mtm-left {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.mtm-chart-body .mtm-chart-scroll {
+  width: 100%;
+  min-width: 0;
+}
+
+#map-tile-root.is-map-overflowing .mtm-chart-scroll {
+  justify-content: flex-start;
+}
+
+#mtm-wrap {
+  position: relative;
+  margin: 0 auto;
+  flex: 0 0 auto;
+}
+
+#map-tile-root.is-map-overflowing #mtm-wrap {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#mtm-map {
+  position: relative;
+}
+
+#mtm-tip {
+  position: relative;
+  flex: 0 0 360px;
+  width: 360px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: 8px;
+  line-height: 1.1;
+  pointer-events: auto;
+  display: block;
+  visibility: hidden;
+  z-index: 20;
+  color: var(--color-text-primary, #191919);
+  box-shadow: 0 0px 0px rgba(0,0,0,.18);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#map-tile-root.is-static-tooltip #mtm-wrap {
+  height: auto !important;
+}
+
+#map-tile-root.is-static-tooltip #mtm-tip {
+  position: relative;
+  left: auto !important;
+  top: auto !important;
+  width: 360px;
+  max-width: 100%;
+  margin-top: 0;
+  pointer-events: auto;
+  box-shadow: none;
+}
+
+#map-tile-root.is-static-tooltip .mtm-mini-table-wrap {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#map-tile-root.is-static-tooltip .mtm-mini-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#map-tile-root.is-static-tooltip .mtm-mini-table th {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-height: 1.15;
+  text-align: left;
+}
+
+#mtm-area-header {
+  margin-bottom: 12px;
+}
+
+.mtm-area-title {
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mtm-area-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary, #888);
+  margin-top: 3px;
+}
+
+.mtm-unpin-btn {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.mtm-unpin-btn:hover {
+  color: #191919;
+}
+
+.mtm-mini-table-wrap {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 590px;
+}
+
+.mtm-mini-table {
+  border-collapse: collapse;
+  font-size: 10px;
+  table-layout: fixed;
+  width: 100%;
+  min-width: 0;
+}
+
+.mtm-mini-table th,
+.mtm-mini-table td {
+  border: 1px solid rgba(0,0,0,.09);
+  padding: 6px 7px;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mtm-mini-table th {
+  background: var(--color-background-secondary, #f5f5f5);
+  font-weight: 800;
+  text-align: center;
+}
+
+.mtm-mini-table th:first-child {
+  text-align: left;
+}
+
+.mtm-mini-rowhead {
+  font-weight: 800;
+  background: var(--color-background-secondary, #f7f7f7);
+}
+
+.mtm-mini-cell {
+  min-width: 0;
+}
+
+.mtm-mini-value {
+  font-weight: 800;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.mtm-mini-bar {
+  width: 100%;
+  max-width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+.mtm-mini-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.mtm-mini-muted {
+  color: var(--color-text-secondary, #777);
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.mtm-source {
+  width: min(100%, 1200px);
+  margin: 30px auto 0 auto;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+  font-family: "Inter", Arial, Helvetica, sans-serif !important;
+}
+
+.mtm-source strong {
+  font-weight: 700;
+}
+
+.mtm-source a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+  #map-tile-root {
+    padding: 0;
+  }
+
+  .mtm-chart-body {
+    flex-direction: column;
+    gap: 12px;
+    width: min(100%, var(--mtm-graphic-width));
+  }
+
+  #mtm-left,
+  .mtm-chart-body .mtm-chart-scroll,
+  #map-tile-root.is-static-tooltip #mtm-tip,
+  #mtm-tip {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .mtm-controls {
+    gap: 10px;
+  }
+
+  .mtm-ctrl {
+    min-width: 0;
+  }
+
+  .mtm-legend {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .mtm-controls {
+    flex-wrap: wrap;
+  }
+}
+</style>
+
+<div id="map-tile-root">
+  <div class="mtm-header">
+    <h2 class="mtm-title">Childcare costs as a share of pretax household income</h2>
+    <p class="mtm-subtitle">Households with children aged 0-12, 2024</p>
+  </div>
+
+  <div class="mtm-chart-body">
+    <div id="mtm-left">
+      <div class="mtm-controls">
+        <div class="mtm-ctrl">
+          <label for="mtm-race">Race/ethnicity</label>
+          <select id="mtm-race"></select>
+        </div>
+      </div>
+
+      <div class="mtm-chart-scroll">
+        <div id="mtm-wrap">
+          <div class="mtm-legend">
+            <span id="mtm-leg-min"></span>
+            <div class="mtm-legend-bar" id="mtm-leg-bar"></div>
+            <span id="mtm-leg-max"></span>
+          </div>
+          <div id="mtm-map"></div>
+        </div>
+      </div>
+
+    </div>
+    <div id="mtm-tip"></div>
+  </div>
+  <p class="mtm-source">
+    <strong>Source:</strong>
+    <a href="https://www.brookings.edu/articles/states-of-affordability-a-series-on-where-and-why-us-households-struggle-to-make-ends-meet/" target="_blank" rel="noopener">Brookings Metro States of Affordability database</a>
+  </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+<script>
+(function () {
+  const CSV_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/exp-childcare-tile-map.csv";
+  const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
+
+  const BASE_TILE_SIZE = 58;
+  const BASE_TILE_GAP = 7;
+  const MIN_TILE_SIZE = 16;
+  const MIN_TILE_GAP = 2;
+  const MAP_TOP_PAD = 10;
+  const MAP_BOTTOM_PAD = 10;
+  const NO_DATA_COLOR = "#C8C5BC";
+  const US_AREA = "99999";
+
+  const PALETTE = [
+    "#172B6A","#224987","#2B629B","#3977AD","#4D89BA","#639BC5","#79ACCF",
+    "#8FBBD8","#A4CAE0","#B8D6E7","#CBE1EC","#DDEBF0","#EFE8CF","#F7DEB7",
+    "#F9D19A","#F9C27D","#F7B164","#F4A14E","#F0923B","#EB842B","#E5771D",
+    "#DE6E14","#D7650E","#D05D0B","#C9550A"
+  ];
+
+  let allData = [];
+  let states = [];
+  let tiles = {};
+  let latestYear = null;
+  let latestYearIsNumeric = true;
+  let fixedBreaks = [];
+  let fixedMin = null;
+  let fixedMax = null;
+  let raceValues = [];
+  let lastAvailableWidth = 0;
+  let resizeTimer = null;
+  let activeStaticTile = null;
+  let stickyFips = null;
+
+  const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
+
+  function fmtSS(value) {
+    const v = Number(value);
+    if (!Number.isFinite(v)) return "—";
+    return `${(v * 100).toFixed(1)}%`;
+  }
+
+  function titleCase(str) {
+    return String(str || "").toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function hexToRgb(hex) {
+    const num = parseInt(hex.replace("#",""), 16);
+    return { r: (num >> 16) & 255, g: (num >> 8) & 255, b: num & 255 };
+  }
+
+  function luma(hex) {
+    const { r, g, b } = hexToRgb(hex);
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  }
+
+  function uniqueInDataOrder(data, key) {
+    const seen = new Set();
+    const values = [];
+    data.forEach(d => {
+      const v = d[key];
+      if (v !== null && v !== undefined && String(v) !== "" && !seen.has(String(v))) {
+        seen.add(String(v));
+        values.push(String(v));
+      }
+    });
+    return values;
+  }
+
+  function medianDiff(values) {
+    const rounded = [...new Set(values.filter(Number.isFinite).map(v => Number(v.toFixed(2))))];
+    rounded.sort((a, b) => a - b);
+    const diffs = [];
+    for (let i = 1; i < rounded.length; i++) {
+      const d = +(rounded[i] - rounded[i - 1]).toFixed(4);
+      if (d > 0.0001) diffs.push(d);
+    }
+    if (!diffs.length) return 0.1;
+    diffs.sort((a, b) => a - b);
+    return diffs[Math.floor(diffs.length / 2)];
+  }
+
+  function readStatesFromTopology(raw) {
+    const topo = raw.content || raw;
+    const geoms = topo?.objects?.regions?.geometries || topo?.objects?.states?.geometries || [];
+
+    const parsed = geoms.map(g => {
+      const p = g.properties || {};
+      const fips = String(p.id ?? p.STATEFP ?? "").padStart(2, "0");
+      let abbr = String(p.state_id || p.postal || p.abbr || "").toUpperCase();
+      if (abbr === "DCC") abbr = "DC";
+      return { fips, abbr, name: p.name_lc || titleCase(p.name) || abbr, cx: Number(p.cx), cy: Number(p.cy) };
+    }).filter(d => d.fips && d.abbr && Number.isFinite(d.cx) && Number.isFinite(d.cy));
+
+    const xs = parsed.map(d => d.cx);
+    const ys = parsed.map(d => d.cy);
+    const minX = Math.min(...xs);
+    const maxY = Math.max(...ys);
+    const stepX = medianDiff(xs);
+    const stepY = medianDiff(ys);
+
+    parsed.forEach(d => {
+      d.c = Math.round((d.cx - minX) / stepX);
+      d.r = Math.round((maxY - d.cy) / stepY);
+    });
+
+    const minCol = Math.min(...parsed.map(d => d.c));
+    const minRow = Math.min(...parsed.map(d => d.r));
+    parsed.forEach(d => { d.c -= minCol; d.r -= minRow; });
+
+    return parsed;
+  }
+
+  function normalizeArea(value, abbrToFips) {
+    if (value === null || value === undefined) return "";
+    const raw = String(value).trim();
+    if (!raw) return "";
+    const upper = raw.toUpperCase();
+    if (abbrToFips[upper]) return abbrToFips[upper];
+    const match = raw.match(/\d+/);
+    if (!match) return "";
+    const digits = match[0];
+    if (digits === US_AREA) return US_AREA;
+    if (digits.length > 2) return digits.slice(0, 2);
+    return digits.padStart(2, "0");
+  }
+
+  function pick(row, names) {
+    for (const name of names) {
+      if (row[name] !== undefined && row[name] !== null && row[name] !== "") return row[name];
+    }
+    return "";
+  }
+
+  function normalizeRows(rows, stateList) {
+    const abbrToFips = {};
+    stateList.forEach(s => { abbrToFips[s.abbr] = s.fips; });
+
+    return rows.map((row, i) => {
+      const clean = {};
+      Object.keys(row).forEach(k => {
+        const key = String(k).trim();
+        clean[key] = typeof row[k] === "string" ? row[k].trim() : row[k];
+      });
+      return {
+        _order: i,
+        year: pick(clean, ["year","Year","YEAR"]),
+        area: normalizeArea(pick(clean, ["area","fips","state_fips","state","state_id","id"]), abbrToFips),
+        area_name: pick(clean, ["area_name","state_name","name"]),
+        racecomp: String(pick(clean, ["racecomp","race_comp","race","RACECOMP"])),
+        ss: Number(pick(clean, ["ss","SS","value","Value","exp"]))
+      };
+    }).filter(d => d.area && Number.isFinite(d.ss));
+  }
+
+  function setLatestYear(data) {
+    const numericYears = data.map(d => Number(d.year)).filter(Number.isFinite);
+    if (numericYears.length) {
+      latestYearIsNumeric = true;
+      latestYear = Math.max(...numericYears);
+      return;
+    }
+    latestYearIsNumeric = false;
+    latestYear = uniqueInDataOrder(data, "year").at(-1);
+  }
+
+  function isLatestYearRow(d) {
+    if (latestYear === null || latestYear === undefined || latestYear === "") return true;
+    return latestYearIsNumeric ? Number(d.year) === latestYear : String(d.year) === String(latestYear);
+  }
+
+  function quantile(sortedValues, p) {
+    if (!sortedValues.length) return null;
+    if (sortedValues.length === 1) return sortedValues[0];
+    const idx = (sortedValues.length - 1) * p;
+    const lo = Math.floor(idx);
+    const hi = Math.ceil(idx);
+    return sortedValues[lo] * (1 - (idx - lo)) + sortedValues[hi] * (idx - lo);
+  }
+
+  function quantileBreaks(values, classes) {
+    const sorted = values.map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+    if (!sorted.length) return [];
+    const breaks = [];
+    for (let i = 0; i <= classes; i++) breaks.push(quantile(sorted, i / classes));
+    return breaks;
+  }
+
+  function colorForValue(value, breaks) {
+    const v = Number(value);
+    if (!Number.isFinite(v) || !breaks.length) return NO_DATA_COLOR;
+    for (let i = 1; i < breaks.length; i++) {
+      if (v <= breaks[i]) return PALETTE[i - 1];
+    }
+    return PALETTE[PALETTE.length - 1];
+  }
+
+  function barPct(value) {
+    const v = Number(value);
+    if (!Number.isFinite(v) || fixedMin === null || fixedMax === null || fixedMax === fixedMin) return 0;
+    return Math.max(0, Math.min(100, ((v - fixedMin) / (fixedMax - fixedMin)) * 100));
+  }
+
+  function getStateRows(fips) {
+    return allData.filter(d =>
+      isLatestYearRow(d) &&
+      String(d.area).padStart(2, "0") === String(fips).padStart(2, "0")
+    );
+  }
+
+  function makeTooltipTable(state, isSticky = false) {
+    const rows = getStateRows(state.fips);
+    const byRace = {};
+    rows.forEach(d => {
+      if (!byRace[d.racecomp]) byRace[d.racecomp] = d;
+    });
+
+    let html = `
+      <div id="mtm-area-header">
+        <div class="mtm-area-title">
+          <span>${esc(state.name)}</span>
+          ${isSticky ? `<button type="button" class="mtm-unpin-btn" id="mtm-unpin-btn">✕ unpin</button>` : ""}
+        </div>
+        <div class="mtm-area-subtitle">${isSticky ? "Pinned — click tile again or unpin to return to U.S." : "Hover over a state to explore"}</div>
+      </div>
+      <div class="mtm-mini-table-wrap">
+        <table class="mtm-mini-table">
+          <colgroup>
+            <col style="width:26%;">
+            <col style="width:74%;">
+          </colgroup>
+          <thead>
+            <tr><th>Race/ethnicity</th><th>Total childcare (% of pretax income)</th></tr>
+          </thead>
+          <tbody>
+    `;
+
+    raceValues.forEach(r => {
+      const row = byRace[r];
+      const v = row ? Number(row.ss) : NaN;
+      const color = Number.isFinite(v) ? colorForValue(v, fixedBreaks) : "#bbb";
+      const pct = barPct(v);
+
+      html += `
+        <tr>
+          <td class="mtm-mini-rowhead">${esc(r)}</td>
+          <td class="mtm-mini-cell">
+            ${Number.isFinite(v)
+              ? `<div class="mtm-mini-value">${fmtSS(v)}</div>
+                 <div class="mtm-mini-bar"><div class="mtm-mini-fill" style="width:${pct}%;background:${color};"></div></div>`
+              : `<span class="mtm-mini-muted">—</span>`
+            }
+          </td>
+        </tr>
+      `;
+    });
+
+    html += `</tbody></table></div>`;
+    return html;
+  }
+
+  function getResponsiveLayout(maxCol, maxRow) {
+    const root = document.getElementById("map-tile-root");
+    const sizingEl = document.querySelector(".mtm-chart-scroll") || root;
+    const columns = maxCol + 1;
+    const rows = maxRow + 1;
+    const baseWidth = columns * (BASE_TILE_SIZE + BASE_TILE_GAP) - BASE_TILE_GAP;
+    const sizingStyle = window.getComputedStyle(sizingEl);
+    const availableWidth = sizingEl.clientWidth
+      - parseFloat(sizingStyle.paddingLeft || 0)
+      - parseFloat(sizingStyle.paddingRight || 0);
+
+    const scale = Math.min(1, Math.max(0.01, availableWidth / baseWidth));
+    let tileGap = Math.max(MIN_TILE_GAP, Math.floor(BASE_TILE_GAP * scale));
+    let tileSize = Math.max(MIN_TILE_SIZE, Math.floor(BASE_TILE_SIZE * scale));
+
+    const fitTileSize = Math.floor((availableWidth + tileGap) / columns - tileGap);
+    tileSize = Math.min(tileSize, fitTileSize);
+
+    if (tileSize < MIN_TILE_SIZE && tileGap > 1) {
+      tileGap = 1;
+      tileSize = Math.floor((availableWidth + tileGap) / columns - tileGap);
+    }
+
+    tileSize = Math.max(12, tileSize);
+
+    const fontSize = Math.max(8, Math.min(15, Math.floor(tileSize * 0.45)));
+
+    return {
+      tileSize,
+      tileGap,
+      fontSize,
+      availableWidth,
+      mapWidth: columns * (tileSize + tileGap) - tileGap,
+      mapHeight: rows * (tileSize + tileGap) - tileGap
+    };
+  }
+
+  function usesStaticTooltip() {
+    return true;
+  }
+
+  function setActiveStaticTile(tile) {
+    if (activeStaticTile && activeStaticTile !== tile) {
+      activeStaticTile.style.filter = "";
+      activeStaticTile.style.transform = "";
+    }
+
+    activeStaticTile = tile;
+  }
+
+  function clearPinnedTile() {
+    if (stickyFips) {
+      const pinned = tiles[stickyFips];
+      if (pinned) {
+        pinned.style.outline = "";
+        pinned.style.filter = "";
+        pinned.style.transform = "";
+      }
+    }
+    stickyFips = null;
+  }
+
+  function bindUnpinButton() {
+    const btn = document.getElementById("mtm-unpin-btn");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      clearPinnedTile();
+      showDefaultTooltip();
+    });
+  }
+
+  function showTooltip(state, tile, isSticky = false) {
+    const tip = document.getElementById("mtm-tip");
+
+    tip.innerHTML = makeTooltipTable(state, isSticky);
+    bindUnpinButton();
+    tip.style.display = "block";
+    tip.style.visibility = "visible";
+    tip.style.left = "";
+    tip.style.top = "";
+
+    tile.style.filter = "brightness(1.08)";
+    tile.style.transform = "translateY(-1px)";
+
+    if (usesStaticTooltip()) {
+      setActiveStaticTile(tile);
+    }
+  }
+
+  function showDefaultTooltip() {
+    const tip = document.getElementById("mtm-tip");
+    clearPinnedTile();
+    if (activeStaticTile) {
+      activeStaticTile.style.filter = "";
+      activeStaticTile.style.transform = "";
+      activeStaticTile = null;
+    }
+
+    tip.innerHTML = makeTooltipTable({ fips: US_AREA, name: "United States" });
+    tip.style.display = "block";
+    tip.style.visibility = "visible";
+    tip.style.left = "";
+    tip.style.top = "";
+  }
+
+  function setLegendCenter(tileSize, tileGap) {
+    const wrap = document.getElementById("mtm-wrap");
+    const ak = states.find(s => s.abbr === "AK");
+    const me = states.find(s => s.abbr === "ME");
+    if (!wrap || !ak || !me) return;
+    const step = tileSize + tileGap;
+    const akCenter = ak.c * step + tileSize / 2;
+    const meCenter = me.c * step + tileSize / 2;
+    wrap.style.setProperty("--mtm-legend-center", `${(akCenter + meCenter) / 2}px`);
+  }
+
+  function buildMap() {
+    const root = document.getElementById("map-tile-root");
+    const map = document.getElementById("mtm-map");
+    const wrap = document.getElementById("mtm-wrap");
+    const tip = document.getElementById("mtm-tip");
+
+    map.innerHTML = "";
+    tip.style.display = "block";
+    tip.style.visibility = "hidden";
+    tip.style.left = "";
+    tip.style.top = "";
+    tiles = {};
+    activeStaticTile = null;
+
+    const maxCol = Math.max(...states.map(s => s.c));
+    const maxRow = Math.max(...states.map(s => s.r));
+    root.classList.toggle("is-static-tooltip", usesStaticTooltip());
+
+    const {
+      tileSize,
+      tileGap,
+      fontSize,
+      availableWidth,
+      mapWidth,
+      mapHeight
+    } = getResponsiveLayout(maxCol, maxRow);
+    root.classList.toggle("is-map-overflowing", mapWidth > availableWidth + 1);
+    root.style.setProperty("--mtm-graphic-width", `${mapWidth}px`);
+
+    map.style.width = `${mapWidth}px`;
+    map.style.height = `${mapHeight + MAP_TOP_PAD + MAP_BOTTOM_PAD}px`;
+    wrap.style.width = `${mapWidth}px`;
+    wrap.style.height = `${mapHeight + MAP_TOP_PAD + MAP_BOTTOM_PAD}px`;
+    setLegendCenter(tileSize, tileGap);
+    lastAvailableWidth = availableWidth;
+
+    states.forEach(s => {
+      const tile = document.createElement("div");
+      tile.style.cssText = `
+        position:absolute;
+        left:${s.c * (tileSize + tileGap)}px;
+        top:${MAP_TOP_PAD + s.r * (tileSize + tileGap)}px;
+        width:${tileSize}px;
+        height:${tileSize}px;
+        border-radius:4px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:${fontSize}px;
+        font-weight:600;
+        cursor:pointer;
+        user-select:none;
+        transition:filter .12s, transform .12s;
+        background:${NO_DATA_COLOR};
+        color:rgba(90,90,90,.58);
+      `;
+      tile.textContent = s.abbr;
+      tile.id = `tl-${s.fips}`;
+
+      tile.addEventListener("mouseenter", () => {
+        if (stickyFips) return;
+        showTooltip(s, tile);
+      });
+
+      tile.addEventListener("mousemove", e => {
+        if (usesStaticTooltip()) return;
+
+        const wr = wrap.getBoundingClientRect();
+        let left = e.clientX - wr.left + 14;
+        let top = e.clientY - wr.top + 14;
+        const tipWidth = tip.offsetWidth || 300;
+        const tipHeight = tip.offsetHeight || 220;
+        if (left + tipWidth > mapWidth) left = e.clientX - wr.left - tipWidth - 14;
+        if (top + tipHeight > mapHeight) top = e.clientY - wr.top - tipHeight - 14;
+        tip.style.left = `${Math.max(0, left)}px`;
+        tip.style.top = `${Math.max(0, top)}px`;
+      });
+
+      tile.addEventListener("click", () => {
+        if (!usesStaticTooltip()) return;
+
+        if (stickyFips === s.fips) {
+          showDefaultTooltip();
+          return;
+        }
+
+        clearPinnedTile();
+        stickyFips = s.fips;
+        tile.style.outline = "2px solid #191919";
+        tile.style.outlineOffset = "1px";
+        showTooltip(s, tile, true);
+      });
+
+      tile.addEventListener("mouseleave", () => {
+        if (stickyFips) return;
+
+        tile.style.filter = "";
+        tile.style.transform = "";
+
+        if (activeStaticTile === tile) {
+          activeStaticTile = null;
+        }
+
+        showDefaultTooltip();
+      });
+
+      tiles[s.fips] = tile;
+      map.appendChild(tile);
+    });
+
+    map.addEventListener("click", e => {
+      if (e.target === map && stickyFips) {
+        showDefaultTooltip();
+      }
+    });
+
+    showDefaultTooltip();
+  }
+
+  function rebuildMapForWidthChange() {
+    window.clearTimeout(resizeTimer);
+
+    resizeTimer = window.setTimeout(() => {
+      if (!states.length) return;
+
+      const root = document.getElementById("map-tile-root");
+      const sizingEl = document.querySelector(".mtm-chart-scroll") || root;
+      const sizingStyle = window.getComputedStyle(sizingEl);
+      const availableWidth = sizingEl.clientWidth
+        - parseFloat(sizingStyle.paddingLeft || 0)
+        - parseFloat(sizingStyle.paddingRight || 0);
+
+      if (availableWidth && Math.abs(availableWidth - lastAvailableWidth) < 24) return;
+
+      buildMap();
+      updateMap();
+    }, 120);
+  }
+
+  function populateFilters(data) {
+    const latestData = data.filter(isLatestYearRow);
+    raceValues = uniqueInDataOrder(latestData, "racecomp");
+
+    const raceSelect = document.getElementById("mtm-race");
+    raceSelect.replaceChildren();
+    raceValues.forEach(v => raceSelect.appendChild(new Option(v, v)));
+    if (raceValues.length) raceSelect.value = raceValues[0];
+  }
+
+  function getFilteredRows() {
+    const race = document.getElementById("mtm-race").value;
+    return allData.filter(d =>
+      isLatestYearRow(d) &&
+      String(d.racecomp) === String(race)
+    );
+  }
+
+  function updateMap() {
+    const filtered = getFilteredRows();
+    const byState = {};
+    filtered.forEach(d => {
+      const fips = String(d.area).padStart(2, "0");
+      if (!byState[fips]) byState[fips] = d;
+    });
+
+    Object.keys(tiles).forEach(fips => {
+      const tile = tiles[fips];
+      const row = byState[fips];
+      if (row && Number.isFinite(Number(row.ss))) {
+        const value = Number(row.ss);
+        const color = colorForValue(value, fixedBreaks);
+        tile.style.background = color;
+        tile.style.color = luma(color) > 0.58 ? "rgba(35,25,15,.82)" : "rgba(255,255,255,.92)";
+        tile.dataset.val = value;
+      } else {
+        tile.style.background = NO_DATA_COLOR;
+        tile.style.color = "rgba(90,90,90,.58)";
+        tile.dataset.val = "";
+      }
+    });
+
+    showDefaultTooltip();
+  }
+
+  function buildLegend() {
+    const bar = document.getElementById("mtm-leg-bar");
+    const minEl = document.getElementById("mtm-leg-min");
+    const maxEl = document.getElementById("mtm-leg-max");
+    bar.innerHTML = "";
+    if (!fixedBreaks.length) { minEl.textContent = ""; maxEl.textContent = ""; return; }
+
+    PALETTE.forEach((color, i) => {
+      const swatch = document.createElement("div");
+      swatch.style.width = `${Math.max(8, Math.floor(300 / PALETTE.length))}px`;
+      swatch.style.height = "14px";
+      swatch.style.background = color;
+      swatch.title = `${fmtSS(fixedBreaks[i])} – ${fmtSS(fixedBreaks[i + 1])}`;
+      bar.appendChild(swatch);
+    });
+
+    minEl.textContent = fmtSS(fixedBreaks[0]);
+    maxEl.textContent = fmtSS(fixedBreaks[fixedBreaks.length - 1]);
+  }
+
+  async function init() {
+    try {
+      const [csvText, tileJson] = await Promise.all([
+        fetch(CSV_URL).then(r => { if (!r.ok) throw new Error(`Could not load CSV: ${r.status}`); return r.text(); }),
+        fetch(TILE_JSON_URL).then(r => { if (!r.ok) throw new Error(`Could not load tile JSON: ${r.status}`); return r.json(); })
+      ]);
+
+      states = readStatesFromTopology(tileJson);
+
+      const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true, dynamicTyping: false });
+      allData = normalizeRows(parsed.data, states);
+      setLatestYear(allData);
+
+      const latestData = allData.filter(isLatestYearRow);
+      const allLatestValues = latestData.map(d => Number(d.ss)).filter(Number.isFinite);
+
+      fixedBreaks = quantileBreaks(allLatestValues, 25);
+      fixedMin = fixedBreaks[0];
+      fixedMax = fixedBreaks[fixedBreaks.length - 1];
+
+      populateFilters(allData);
+      buildMap();
+      buildLegend();
+      updateMap();
+
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(rebuildMapForWidthChange);
+        observer.observe(document.getElementById("map-tile-root"));
+      } else {
+        window.addEventListener("resize", rebuildMapForWidthChange);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  document.getElementById("mtm-race").addEventListener("change", updateMap);
+  init();
+})();
+</script>
+
+<script>
+(function () {
+  function sendChartHeight() {
+    const root = document.getElementById("map-tile-root");
+    const source = document.querySelector(".mtm-source");
+    const rootRect = root?.getBoundingClientRect();
+    const sourceRect = source?.getBoundingClientRect();
+    const height = Math.ceil(Math.max(
+      rootRect?.bottom || 0,
+      sourceRect?.bottom || 0
+    ));
+
+    window.parent.postMessage({
+      type: "soa-chart-resize",
+      src: window.location.href,
+      chart: window.location.pathname.split("/").pop(),
+      height
+    }, "*");
+  }
+
+  window.addEventListener("load", sendChartHeight);
+  window.addEventListener("resize", sendChartHeight);
+  if ("ResizeObserver" in window) {
+    const target = document.getElementById("map-tile-root") || document.body;
+    new ResizeObserver(sendChartHeight).observe(target);
+  }
+  window.setTimeout(sendChartHeight, 250);
+  window.setTimeout(sendChartHeight, 750);
+})();
+</script>
