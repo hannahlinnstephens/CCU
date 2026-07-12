@@ -422,8 +422,8 @@ body {
 
 <div id="map-tile-root">
   <div class="mtm-header">
-    <h2 class="mtm-title">Childcare costs as a share of pretax household income</h2>
-    <p class="mtm-subtitle">Households with children aged 0-12, 2024</p>
+    <h2 class="mtm-title">Share of households able to make ends meet with Down Payment Assitance</h2>
+    <p class="mtm-subtitle">2024</p>
   </div>
 
   <div class="mtm-chart-body">
@@ -459,7 +459,7 @@ body {
 
 <script>
 (function () {
-  const CSV_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/exp-childcare-tile-map.csv";
+  const CSV_URL = "https://raw.githubusercontent.com/hannahlinnstephens/CCU/main/state_dpa_race.csv";
   const TILE_JSON_URL = "https://raw.githubusercontent.com/glencorahaskins/applied-projects/refs/heads/main/maps/us-states-square_dc.json";
 
   const BASE_TILE_SIZE = 58;
@@ -608,7 +608,7 @@ body {
         area: normalizeArea(pick(clean, ["area","fips","state_fips","state","state_id","id"]), abbrToFips),
         area_name: pick(clean, ["area_name","state_name","name"]),
         racecomp: String(pick(clean, ["racecomp","race_comp","race","RACECOMP"])),
-        ss: Number(pick(clean, ["ss","SS","value","Value","exp"]))
+        ss: Number(pick(clean, ["ss","SS","value","Value","exp", "ssh_dpa"]))
       };
     }).filter(d => d.area && Number.isFinite(d.ss));
   }
